@@ -13,13 +13,13 @@ int checkDrawCard(int p, struct gameState *post) {
   memcpy (&pre, post, sizeof(struct gameState));
 
   int r;
-  //  printf ("drawCard PRE: p %d HC %d DeC %d DiC %d\n",
-  //	  p, pre.handCount[p], pre.deckCount[p], pre.discardCount[p]);
+    printf ("drawCard PRE: p %d HC %d DeC %d DiC %d\n",
+  	  p, pre.handCount[p], pre.deckCount[p], pre.discardCount[p]);
     
   r = drawCard (p, post);
 
-  //printf ("drawCard POST: p %d HC %d DeC %d DiC %d\n",
-  //      p, post->handCount[p], post->deckCount[p], post->discardCount[p]);
+  printf ("drawCard POST: p %d HC %d DeC %d DiC %d\n",
+        p, post->handCount[p], post->deckCount[p], post->discardCount[p]);
 
   if (pre.deckCount[p] > 0) {
     pre.handCount[p]++;
