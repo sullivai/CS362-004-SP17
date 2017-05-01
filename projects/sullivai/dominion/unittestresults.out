@@ -872,6 +872,329 @@ TEST PASSED: Player deck count unchanged.
 TEST PASSED: Player hand count unchanged.
 TEST PASSED: Discard adjusted.
 TEST PASSED: Card is in discard pile.
+----------------- Testing Card: smithy ----------------
+
+TEST 1: play smithy - draw 3/discard 1 = +2 in hand, -3 in deck,+0 buys, +0 coins
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+     TEST FAILED: hand count = 8, expected = 7
+     TEST FAILED: deck count = 1, expected = 2
+TEST PASSED: discard count = 0, expected = 0
+TEST PASSED: played count = 1, expected = 1
+TEST PASSED: played card = 13, expected = 13
+TEST PASSED: buys = 1, expected = 1
+TEST PASSED: coins = 4, expected = 4
+
+TEST 2: loop position of smithy in player's hand - correct card gets played
+TEST PASSED: handpos = 0, played card = 13, expected = 13
+TEST PASSED: handpos = 1, played card = 13, expected = 13
+TEST PASSED: handpos = 2, played card = 13, expected = 13
+TEST PASSED: handpos = 3, played card = 13, expected = 13
+TEST PASSED: handpos = 4, played card = 13, expected = 13
+
+TEST 3: check other players hands and decks unchanged
+
+Player 1:
+TEST PASSED: hand count = 0, expected = 0
+TEST PASSED: deck count = 10, expected = 10
+TEST PASSED: discard count = 0, expected = 0
+
+Player 2:
+TEST PASSED: hand count = 0, expected = 0
+TEST PASSED: deck count = 10, expected = 10
+TEST PASSED: discard count = 0, expected = 0
+
+Player 3:
+TEST PASSED: hand count = 0, expected = 0
+TEST PASSED: deck count = 10, expected = 10
+TEST PASSED: discard count = 0, expected = 0
+----------------- Testing Card: adventurer ----------------
+TEST 1: no treasures in deck - gain nothing
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+     TEST FAILED: hand count = 7, expected = 4
+     TEST FAILED: deck count = 3, expected = 5
+     TEST FAILED: discard count = 0, expected = 1
+TEST PASSED: buys = 1, expected = 1
+TEST 2: 1 treasure in deck - +1 in hand
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+     TEST FAILED: hand count = 7, expected = 5
+     TEST FAILED: deck count = 3, expected = 4
+     TEST FAILED: discard count = 0, expected = 1
+TEST PASSED: buys = 1, expected = 1
+TEST 3: 2 treasures in deck - +2 in hand
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+     TEST FAILED: hand count = 7, expected = 6
+TEST PASSED: deck count = 3, expected = 3
+     TEST FAILED: discard count = 0, expected = 1
+TEST PASSED: buys = 1, expected = 1
+----------------- Testing Card: council_room ----------------
+
+TEST 1: play council_room - draw 4/discard 1 = +3 in hand, -4 in deck, +1 buy, +0 coins
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+TEST PASSED: hand count = 8, expected = 8
+TEST PASSED: deck count = 1, expected = 1
+TEST PASSED: discard count = 0, expected = 0
+     TEST FAILED: played count = 0, expected = 1
+     TEST FAILED: played card = 0, expected = 8
+TEST PASSED: buys = 2, expected = 2
+TEST PASSED: coins = 4, expected = 4
+
+TEST 2: loop position of council_room in player's hand - correct card gets played
+     TEST FAILED: handpos = 0, played card = 0, expected = 8
+     TEST FAILED: handpos = 1, played card = 0, expected = 8
+     TEST FAILED: handpos = 2, played card = 0, expected = 8
+     TEST FAILED: handpos = 3, played card = 0, expected = 8
+     TEST FAILED: handpos = 4, played card = 0, expected = 8
+
+TEST 3: check other players +1 in hand, -1 in deck
+
+Player 1:
+TEST PASSED: hand count = 1, expected = 1
+TEST PASSED: deck count = 9, expected = 9
+TEST PASSED: discard count = 0, expected = 0
+
+Player 2:
+TEST PASSED: hand count = 1, expected = 1
+TEST PASSED: deck count = 9, expected = 9
+TEST PASSED: discard count = 0, expected = 0
+
+Player 3:
+TEST PASSED: hand count = 1, expected = 1
+TEST PASSED: deck count = 9, expected = 9
+TEST PASSED: discard count = 0, expected = 0
+----------------- Testing Card: mine ----------------
+
+TEST 1a: play mine - choice1 = Cu, choice2 = Cu
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+TEST PASSED: hand count = 5, expected = 5
+     TEST FAILED: deck count = 5, expected = 4
+TEST PASSED: discard count = 0, expected = 0
+TEST PASSED: buys = 1, expected = 1
+TEST PASSED: coins = 4, expected = 4
+
+TEST 1b: play mine - choice1 = Cu, choice2 = Ag
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+     TEST FAILED: supply[5] = 39, expected 46
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+TEST PASSED: hand count = 4, expected = 4
+TEST PASSED: deck count = 5, expected = 5
+     TEST FAILED: discard count = 0, expected = 1
+TEST PASSED: buys = 1, expected = 1
+     TEST FAILED: coins = 4, expected = 7
+
+TEST 1c: play mine - choice1 = Cu, choice2 = Au
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+     TEST FAILED: supply[6] = 29, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+     TEST FAILED: hand count = 4, expected = 5
+TEST PASSED: deck count = 5, expected = 5
+TEST PASSED: discard count = 0, expected = 0
+     TEST FAILED: played count = 2, expected = 0
+TEST PASSED: buys = 1, expected = 1
+TEST PASSED: coins = 4, expected = 4
 Function 'updateCoins'
 Lines executed:81.82% of 11
 Branches executed:100.00% of 8
@@ -885,28 +1208,28 @@ Taken at least once:100.00% of 6
 Calls executed:100.00% of 1
 
 Function 'discardCard'
-Lines executed:0.00% of 13
-Branches executed:0.00% of 6
-Taken at least once:0.00% of 6
+Lines executed:84.62% of 13
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
 No calls
 
 Function 'cardEffect'
-Lines executed:0.00% of 189
-Branches executed:0.00% of 155
-Taken at least once:0.00% of 155
-Calls executed:0.00% of 52
+Lines executed:7.41% of 189
+Branches executed:14.84% of 155
+Taken at least once:3.23% of 155
+Calls executed:9.62% of 52
 
 Function 'play_Smithy'
-Lines executed:0.00% of 5
-Branches executed:0.00% of 2
-Taken at least once:0.00% of 2
-Calls executed:0.00% of 2
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 2
 
 Function 'play_Mine'
-Lines executed:0.00% of 15
-Branches executed:0.00% of 14
-Taken at least once:0.00% of 14
-Calls executed:0.00% of 5
+Lines executed:86.67% of 15
+Branches executed:100.00% of 14
+Taken at least once:64.29% of 14
+Calls executed:100.00% of 5
 
 Function 'play_Feast'
 Lines executed:0.00% of 16
@@ -915,21 +1238,21 @@ Taken at least once:0.00% of 10
 Calls executed:0.00% of 5
 
 Function 'play_Council_room'
-Lines executed:0.00% of 9
-Branches executed:0.00% of 6
-Taken at least once:0.00% of 6
-Calls executed:0.00% of 3
+Lines executed:100.00% of 9
+Branches executed:100.00% of 6
+Taken at least once:100.00% of 6
+Calls executed:100.00% of 3
 
 Function 'play_Adventurer'
-Lines executed:0.00% of 17
-Branches executed:0.00% of 12
-Taken at least once:0.00% of 12
-Calls executed:0.00% of 2
+Lines executed:64.71% of 17
+Branches executed:66.67% of 12
+Taken at least once:41.67% of 12
+Calls executed:50.00% of 2
 
 Function 'getCost'
-Lines executed:10.00% of 30
+Lines executed:20.00% of 30
 Branches executed:100.00% of 28
-Taken at least once:3.57% of 28
+Taken at least once:14.29% of 28
 No calls
 
 Function 'drawCard'
@@ -963,7 +1286,7 @@ Taken at least once:0.00% of 6
 Calls executed:0.00% of 3
 
 Function 'whoseTurn'
-Lines executed:0.00% of 2
+Lines executed:100.00% of 2
 No branches
 No calls
 
@@ -1007,9 +1330,9 @@ Taken at least once:87.50% of 8
 Calls executed:100.00% of 2
 
 Function 'initializeGame'
-Lines executed:85.48% of 62
+Lines executed:91.94% of 62
 Branches executed:100.00% of 46
-Taken at least once:82.61% of 46
+Taken at least once:86.96% of 46
 Calls executed:100.00% of 5
 
 Function 'kingdomCards'
@@ -1029,9 +1352,9 @@ Taken at least once:75.00% of 4
 No calls
 
 File 'dominion.c'
-Lines executed:29.13% of 563
-Branches executed:40.77% of 417
-Taken at least once:31.18% of 417
-Calls executed:15.79% of 95
+Lines executed:41.92% of 563
+Branches executed:54.92% of 417
+Taken at least once:39.81% of 417
+Calls executed:32.63% of 95
 Creating 'dominion.c.gcov'
 

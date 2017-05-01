@@ -21,7 +21,6 @@
 } while(0)
 
 /*
-
 - hand contains 0, 1, 2 treasure cards
 - hand contains coppers - get silver
 - hand contains silvers - get gold
@@ -30,52 +29,16 @@
 - coins increase
 - buys stay same
 - correct card (gold or silver) is in trash
+- gaincard(s) --> goes into hand
+- mine is discarded into trash
 
-c1 is card to trash
--- test c1 is treasure card
+choice1 is card to trash
+-- test choice1 is treasure card
 
-c2 is card to gain?
--- test c2 is valid supply pile
-
-cost of c2 > cost of c1 + 3
-
-gaincard --> goes into hand
-
-mine is discarded into trash
-
-
-choise1 = copper, choice2 = silver OK
-choice1 = copepr, choice2 = gold FAIL
-choice1 = copper, choice2 = nontreasure worth 3 FAIL villag
-choice1 = silver, choice2 = nontreasure worth more FAIL adventurer
-
-test2: choice1 = silver, choice2 = copper OK
-choice1 = silver, choice2 = silver OK
-choice1 = silver choice2 = gold OK
-choice1 = silver choice2 = nontreas worth 6 adventruer FAIL
-
-test3: hand contains 0 treasure cards
-- deck was shuffled?
-- mine discarded
-- nothing else changes
-- coin supplies same
-- coins of player stay same
-
-hand contains 1 treasure
-- deck shuffled
-- mine discarded
-- coins increase
-- change in coin supply dep on what choice1 was and choice 2
-
-hand contains 2 treasures
-- mine discarded 
-- coin supplies change
-- player coins change dep on choice 1/2
-
-test4 c1 is not a treasure card - FAIL
-
-test5 c2 is not a treasure cards - FAIL
+choice2 is card to gain
+-- test choice2 is treasure and valid supply pile
 */
+
 
 int main() {
     char msg[1024];
@@ -103,6 +66,10 @@ cost of c2 > cost of c1 + 3
 - coins increase
 - buys stay same
 - correct card (gold or silver) is in trash
+choice1 = copper, choice2 = silver OK
+choice1 = copepr, choice2 = gold FAIL
+choice1 = copper, choice2 = nontreasure worth 3 FAIL (village)
+choice1 = silver, choice2 = nontreasure worth more FAIL (adventurer)
 */
 
 	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
@@ -244,7 +211,47 @@ cost of c2 > cost of c1 + 3
     sprintf(msg,"coins = %d, expected = %d", testG.coins, G.coins);
     ASSERT2(testG.coins == G.coins, msg);
 
+/*
+test2: choice1 = silver, choice2 = copper OK
+choice1 = silver, choice2 = silver OK
+choice1 = silver choice2 = gold OK
+choice1 = silver choice2 = nontreas worth 6 (adventurer) FAIL
+*/
 
+
+/*
+test3: hand contains 0 treasure cards
+- deck was shuffled?
+- mine discarded
+- nothing else changes
+- coin supplies same
+- coins of player stay same
+
+hand contains 1 treasure
+- deck shuffled
+- mine discarded
+- coins increase
+- change in coin supply dep on what choice1 was and choice 2
+
+hand contains 2 treasures
+- mine discarded 
+- coin supplies change
+- player coins change dep on choice 1/2
+*/
+
+/*
+test4 c1 is not a treasure card - FAIL
+- no change to states
+*/
+
+/*
+test5 c2 is not a treasure cards - FAIL
+- no change to states
+*/
+
+/*
+test 6 cost of ch2 > cost of ch1 + 3 -- FAIL
+*/
 
 
 
