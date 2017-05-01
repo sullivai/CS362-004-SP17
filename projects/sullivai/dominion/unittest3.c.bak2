@@ -1,0 +1,78 @@
+// Aimee Sullivan
+// CS 362-400 Assignment 3
+// 30 April 2017
+// unittest3.c
+// Unit tests for buyCard() function in dominion.c
+// Structure of code is based on testUpdateCoins.c provided in Assignment 3 Assistance 2
+// in course materials.
+#include "dominion.h"
+#include "dominion_helpers.h"
+#include <string.h>
+#include <stdio.h>
+#include <assert.h>
+#include "rngs.h"
+
+
+
+
+
+int main() {
+    char msg[1024];
+    int result; 
+    int seed = 1000;
+    int numPlayer = MAX_PLAYERS;
+    int r;
+    int k[10] = {adventurer, council_room, feast, gardens, mine, remodel,
+                smithy, village, baron, great_hall};
+    struct gameState G;
+    struct gameState tmp;    
+
+    memset(&G,'\0',sizeof(struct gameState));
+    r = initializeGame(numPlayer,k,seed,&G);
+
+    printf("\n\n#####################################################\n");
+    printf("##             TESTING buyCards():                 ##\n");
+    printf("#####################################################\n");
+
+    // Test 1: not enough buys
+    printf("Test 1: not enough buys\n");
+
+    G.numBuys = 0;                  // set buys to 0
+    G.supplyCount[estate] = 1;      // ensure there is a card
+    G.coins = getCost(estate);      // ensure player has sufficient coin for the card
+    tmp = G;                        // save current info
+    result = buyCard(estate,&G);
+
+
+
+    // Test 2: not enough cards
+    printf("Test 2: not enough cards\n");
+    G.numBuys = 1;                  // ensure there are enough buys
+    G.supplyCount[estate] = 0;      // set card supply to 0
+    G.coins = getCost(estate);      // ensure player has sufficient coin for the card
+    tmp = G;                        // save current info
+    result = buyCard(estate,&G);
+
+
+    // Test 3: not enough dosh
+    printf("Test 3: not enough coins\n");
+    G.numBuys = 1;                  // ensure there are enough buys
+    G.supplyCount[estate] = 1;      // ensure there are enough cards
+    G.coins = 0;                    // set player money to 0
+    tmp = G;                        // save current info
+    result = buyCard(estate,&G);
+
+
+    // Test 4: buy card, make sure everything is updated correctly
+    printf("Test 4: successful buy\n");
+    G.numBuys = 1;                  // ensure there are enough buys
+    G.supplyCount[estate] = 1;      // ensure there are enough cards
+    G.coins = getCost(estate);      // ensure there is enough money
+    G.discardCount[G.whoseTurn] = 0;  // set discard pile to zero
+    tmp = G;                        // save current info
+    result = buyCard(estate,&G);
+
+
+
+    return 0;
+}
