@@ -22,58 +22,56 @@
 } while(0)
 
 /*
-- Draw 4 cards - handCount += 3, deck+discard -= 3
+- Draw 4 cards: handCount += 3, deck+discard -= 3
 - Get one buy
-- All other players draw 1 - handCount for them +1, deck+discard -1
+- All other players draw 1: handCount for them +1, deck+discard -1
 - supply piles unaffected
 */
 
 int checkPlayCouncilRoom(struct gameState *post, int p, int handPos){
     char msg[1024];
+    int i, n;
 
     struct gameState pre;
     memcpy(&pre, post, sizeof(struct gameState));
+    
+    // sanity check on player hand/deck states
+    //for (i = 0; i < MAX_PLAYERS; i++){
+    for (i = 0; i < pre.numPlayers; i++){
+        printf("...p %d HC %d DeC %d DiC %d\n", \
+        i,pre.handCount[i],pre.deckCount[i],pre.discardCount[i]);
+    }
 
     // PLAY THE CARD    
     play_Council_room(post, p, handPos);
-/*
-    // bad choice 1
-    if (post->hand[p][ch1] < copper || post->hand[p][ch1] > gold){
-        sprintf(msg,"Returned choice 1 incorrect type %d, expect 4, 5, or 6.", post->hand[p][ch1]);
-        ASSERT2(r == -1 && (post->hand[p][ch1] < copper || post->hand[p][ch1] > gold) ,msg);
-        sprintf(msg, "No state change.");
-        ASSERT2(memcmp(&pre, post, sizeof(struct gameState)) == 0,msg);
+
+    // number of cards gained/lost depends on who is the current player
+    //for (i = 0; i < MAX_PLAYERS; i++){
+    for (i = 0; i < pre.numPlayers; i++){
+        if (i == p){
+            n = 3; // gain 4 cards, discard one played
+            // Check buys for current player only
+            sprintf(msg,"Num buys %d expected %d.",post->numBuys,pre.numBuys+1);
+            ASSERT2(post->numBuys == pre.numBuys+1,msg);
+        } else {
+            n = 1;
+        }
+
+        // Check each player's hand count
+        sprintf(msg,"Player %d hand %d expected %d", i, post->handCount[i],pre.handCount[i]+n);
+        ASSERT2(post->handCount[i] == pre.handCount[i] + n, msg);
+        // Check each player's deck/discarded/played count (played only relevant for current player)
+        sprintf(msg,"Player %d discard+deck+played %d expected %d", i, \
+            post->discardCount[i] + post->deckCount[i] + (i == p ? post->playedCardCount : 0), \
+            pre.discardCount[i] + pre.deckCount[i] + (i == p ? pre.playedCardCount : 0 ) - n);        
+        ASSERT2(post->discardCount[i] + post->deckCount[i] + (i == p ? post->playedCardCount : 0) \
+            == pre.discardCount[i] + pre.deckCount[i] + (i == p ? pre.playedCardCount : 0 ) - n, msg);       
     }
 
-    // bad choice 2
-    if (ch2 < copper || ch2 > gold){
-        sprintf(msg,"Returned choice 2 incorrect type %d, expect 4, 5, or 6.", ch2);
-        ASSERT2(r == -1 && (ch2 < copper || ch2 > gold),msg);
-        sprintf(msg, "No state change.");
-        ASSERT2(memcmp(&pre, post, sizeof(struct gameState)) == 0,msg);
-    }
+    // check supply piles are the same
+    sprintf(msg, "Supply piles unchanged.");
+    ASSERT2(memcmp(&pre.supplyCount, post->supplyCount,sizeof(int)*treasure_map) == 0,msg);
 
-    // choice 2 too expensive
-    if (getCost(post->hand[p][ch1]) + 3 < getCost(ch2)){
-        sprintf(msg,"Returned card too expensive (cost is %d, limit is %d)",getCost(ch2),getCost(post->hand[p][ch1])+3);
-        ASSERT2(r == -1 && getCost(post->hand[p][ch1]) + 3 < getCost(ch2),msg);
-        sprintf(msg, "No state change.");
-        ASSERT2(memcmp(&pre, post, sizeof(struct gameState)) == 0,msg);
-    }
-    
-
-    if (r == 0){
-        // if all OK and card is played, then handcount--, discard++, ch1 supply++, ch2 supply--    
-        sprintf(msg, "POST handcount %d, expected %d.", post->handCount[p],pre.handCount[p]-1);
-        ASSERT2(post->handCount[p] == pre.handCount[p]-1,msg);
-        sprintf(msg, "POST discardcount %d, expected %d.", post->discardCount[p],pre.discardCount[p]+1);
-        ASSERT2(post->discardCount[p] == pre.discardCount[p]+1,msg);
-        sprintf(msg, "POST ch1 supply count %d, expected %d.", post->supplyCount[pre.hand[p][ch1]],pre.supplyCount[pre.hand[p][ch1]]+1);
-        ASSERT2(post->supplyCount[pre.hand[p][ch1]] == pre.supplyCount[pre.hand[p][ch1]]+1,msg);
-        sprintf(msg, "POST ch2 supply count %d, expected %d.", post->supplyCount[ch2], pre.supplyCount[ch2]);
-        ASSERT2(post->supplyCount[ch2] == pre.supplyCount[ch2]-1,msg);
-    }
-*/
     return 0;
 }
 
@@ -94,39 +92,37 @@ int main(){
             ((char*)&G)[i] = floor(Random() * 256);
         }
 
+        // make sure there's a nonzero number of players to avoid segfault (thanks gdb)
+        G.numPlayers = floor(Random() * (MAX_PLAYERS-1));
+        G.numPlayers++;
+        //G.numPlayers = MAX_PLAYERS;
+
         // loop through each player and set up their decks
-        for (p = 0; p < MAX_PLAYERS; p++){
+        //for (p = 0; p < MAX_PLAYERS; p++){
+        for (p = 0; p < G.numPlayers; p++){
             G.deckCount[p] = floor(Random() * MAX_DECK);
             G.discardCount[p] = floor(Random() * MAX_DECK);
             G.handCount[p] = floor(Random() * MAX_HAND);
-            // Random cards in hand
-            for (i = 0; i < G.handCount[p]; i++){
-                G.hand[p][i] = floor(Random() * treasure_map);
-            }
-            // Random cards in deck 
-            for (i = 0; i < G.deckCount[p]; i++){
-                G.deck[p][i] = floor(Random() * treasure_map);
-            }
-            // Random cards in discard 
-            for (i = 0; i < G.discardCount[p]; i++){
-                G.discard[p][i] = floor(Random() * treasure_map);
-            }
         }
-        
-        // set this player
-        p = floor(Random() * MAX_PLAYERS);
+
+        // set up supply piles with random values
+        for (i = 0; i < treasure_map; i++){
+            G.supplyCount[i] = floor(Random() * MAX_DECK);
+        } 
+       
+        // choose a player and set turn
+        //p = floor(Random() * MAX_PLAYERS);
+        p = floor(Random() * G.numPlayers);
         G.whoseTurn = p;
+        G.numBuys = 1;
 
         // Random cards in played 
         G.playedCardCount = floor(Random() * MAX_DECK);
-        for (i = 0; i < G.playedCardCount; i++){
-            G.playedCards[i] = floor(Random() * treasure_map);
-        }
 
         // pick a random handPos for card to be played
         handPos = floor(Random() * (G.handCount[p] - 1));
         
-//        printf("player %d, handcount %d, handpos %d, ch1 %d, cost %d, ch2 %d, cost %d\n",p, G.handCount[p], handPos, G.hand[p][ch1], getCost(G.hand[p][ch1]), ch2, getCost(ch2));
+        printf("player %d, handcount %d, handpos %d, notHandcount %d\n",p, G.handCount[p], handPos, G.discardCount[p]+G.deckCount[p]+G.playedCardCount);
 
         // test card play
         checkPlayCouncilRoom(&G, p, handPos);
