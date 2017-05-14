@@ -11,6 +11,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <assert.h>
+#include <math.h>
 #include "rngs.h"
 #include <stdlib.h>
 
@@ -43,7 +44,7 @@ int checkPlayAdventurer(struct gameState *post, int p){
     struct gameState pre;
     memcpy(&pre, post, sizeof(struct gameState));
 
-
+    // count number of treasures player has (hand, deck, discard)
     for (i = 0; i < pre.handCount[p]; i++){
         if (pre.hand[p][i] == copper || pre.hand[p][i] == silver || pre.hand[p][i] == gold){
             preTreasureHand++;
@@ -61,14 +62,13 @@ int checkPlayAdventurer(struct gameState *post, int p){
     }
     
 
+    printf("PRE: treasures in discard & deck: %d in hand: %d\n",preTreasureCount, preTreasureHand);
+    printf("PRE: p %d HC %d DeC %d DiC %d\n",p, pre.handCount[p], pre.deckCount[p], pre.discardCount[p]);
 
-//    printf("PRE: treasures in discard & deck: %d in hand: %d\n",preTreasureCount, preTreasureHand);
-
-    //printf("PRE: p %d HC %d DeC %d DiC %d\n",p, pre.handCount[p], pre.deckCount[p], pre.discardCount[p]);
-
-    
+    // PLAY THE CARD    
     play_Adventurer(post, p);
     
+    // count number of treasures after playing card
     for (i = 0; i < post->handCount[p]; i++){
         if (post->hand[p][i] == copper || post->hand[p][i] == silver || post->hand[p][i] == gold){
             postTreasureHand++;
@@ -85,32 +85,30 @@ int checkPlayAdventurer(struct gameState *post, int p){
         }
     }
   
+    printf("POST: treasures in discard & deck: %d in hand: %d\n",postTreasureCount, postTreasureHand);
+    printf("POST: p %d HC %d DeC %d DiC %d\n",p, post->handCount[p], post->deckCount[p], post->discardCount[p]);
 
-
-//    printf("POST: treasures in discard & deck: %d in hand: %d\n",postTreasureCount, postTreasureHand);
-
-//    printf("POST: p %d HC %d DeC %d DiC %d\n",p, post->handCount[p], post->deckCount[p], post->discardCount[p]);
-
-
+    // ASSERT +2 treasures in hand if 2+ were in deck and/or discard 
     if (preTreasureCount >= 2){
-        sprintf(msg,"hand = %d, expected = %d", postTreasureHand, preTreasureHand + 2);
+        sprintf(msg,"treasures = %d hand = %d, expected = %d", preTreasureCount, postTreasureHand, preTreasureHand + 2);
         ASSERT2(postTreasureHand == preTreasureHand + 2, msg);
-        sprintf(msg,"deck = %d, expected = %d", postTreasureCount, preTreasureCount - 2);
+        sprintf(msg,"treasures = %d deck+disc = %d, expected = %d", preTreasureCount, postTreasureCount, preTreasureCount - 2);
         ASSERT2(postTreasureCount == preTreasureCount - 2, msg);
+
+    // ASSERT +1 treasure in hand if 1 was in deck or discard
     } else if (preTreasureCount == 1){
-        sprintf(msg,"hand = %d, expected = %d", postTreasureHand, preTreasureHand + 1);
+        sprintf(msg,"treasures = %d hand = %d, expected = %d", preTreasureCount, postTreasureHand, preTreasureHand + 1);
         ASSERT2(postTreasureHand == preTreasureHand + 1, msg);
-        sprintf(msg,"deck = %d, expected = %d", postTreasureCount, preTreasureCount - 1);
+        sprintf(msg,"treasures = %d deck+disc = %d, expected = %d", preTreasureCount, postTreasureCount, preTreasureCount - 1);
         ASSERT2(postTreasureCount == preTreasureCount - 1, msg);
+
+    // ASSERT same number of treasures if there weren't any 
     } else {
-        sprintf(msg,"hand = %d, expected = %d", postTreasureHand, preTreasureHand);
+        sprintf(msg,"treasures = %d hand = %d, expected = %d", preTreasureCount, postTreasureHand, preTreasureHand);
         ASSERT2(postTreasureHand == preTreasureHand, msg);
-        sprintf(msg,"deck = %d, expected = %d", postTreasureCount, preTreasureCount);
+        sprintf(msg,"treasures = %d deck+disc = %d, expected = %d", preTreasureCount, postTreasureCount, preTreasureCount);
         ASSERT2(postTreasureCount == preTreasureCount, msg);
     } 
-
-
-//    assert(memcmp(&pre, post, sizeof(struct gameState)) == 0;
 
     return 0;
 }
@@ -119,9 +117,7 @@ int checkPlayAdventurer(struct gameState *post, int p){
 
 
 int main(){
-    int i, n, p, deckCount, discardCount, handCount;
-    int k[10] = {adventurer, council_room, feast, gardens, mine,
-                remodel, smithy, village, baron, great_hall};
+    int i, n, p;
     struct gameState G;
     printf("Testing play_Adventurer.\n");
     printf("RANDOM TESTS.\n");
@@ -129,6 +125,7 @@ int main(){
     PutSeed(3);
 
     for (n = 0; n < 2000; n++){
+        // set up game state with random info
         for (i = 0; i < sizeof(struct gameState); i++){
             ((char*)&G)[i] = floor(Random() * 256);
         }
@@ -136,174 +133,81 @@ int main(){
         G.deckCount[p] = floor(Random() * MAX_DECK);
         G.discardCount[p] = floor(Random() * MAX_DECK);
         G.handCount[p] = floor(Random() * MAX_HAND);
+
         // Random cards in hand
-        for (i = 0; i < MAX_HAND; i++){
+        for (i = 0; i < G.handCount[p]; i++){
             G.hand[p][i] = floor(Random() * treasure_map);
         }
-        // Random cards in deck and discard
-        for (i = 0; i < MAX_DECK; i++){
+        // Random cards in deck 
+        for (i = 0; i < G.deckCount[p]; i++){
             G.deck[p][i] = floor(Random() * treasure_map);
+        }
+        // Random cards in discard 
+        for (i = 0; i < G.discardCount[p]; i++){
             G.discard[p][i] = floor(Random() * treasure_map);
         }
+
+        // every 100 turns no treasures
+        if (n % 100 == 0){
+            for (i = 0; i < G.handCount[p]; i++){
+                if (G.hand[p][i] >= copper && G.hand[p][i] <= gold){
+                    G.hand[p][i] = estate;
+                } 
+            }
+            for (i = 0; i < G.deckCount[p]; i++){
+                if (G.deck[p][i] >= copper && G.deck[p][i] <= gold){
+                    G.deck[p][i] = estate;
+                } 
+            }
+            for (i = 0; i < G.discardCount[p]; i++){
+                if (G.discard[p][i] >= copper && G.discard[p][i] <= gold){
+                    G.discard[p][i] = estate;
+                } 
+            }
+        }
+
+        // every 101 turns one treasure
+        if (n % 101 == 0){
+            for (i = 0; i < G.handCount[p]; i++){
+                if (G.hand[p][i] >= copper && G.hand[p][i] <= gold){
+                    G.hand[p][i] = estate;
+                } 
+            }
+            for (i = 0; i < G.deckCount[p]; i++){
+                if (G.deck[p][i] >= copper && G.deck[p][i] <= gold){
+                    G.deck[p][i] = estate;
+                } 
+            }
+            for (i = 0; i < G.discardCount[p]; i++){
+                if (G.discard[p][i] >= copper && G.discard[p][i] <= gold){
+                    G.discard[p][i] = estate;
+                } 
+            }
+            // select a random treasure (Cu, Ag, or Au)
+            int whichtreasure;
+            whichtreasure = floor(Random() * 2);
+            // select a random place to put it (hand, deck, discard)
+            int whichpile;
+            whichpile = floor(Random() * 2);
+            switch(whichpile){
+                case 0: // hand
+                        i = floor(Random() * G.handCount[p]);
+                        G.hand[p][i] = whichtreasure + copper; 
+                        break;
+                case 1: // deck
+                        i = floor(Random() * G.deckCount[p]);
+                        G.deck[p][i] = whichtreasure + copper;
+                        break;
+                default: // discard
+                        i = floor(Random() * G.discardCount[p]);
+                        G.discard[p][i] = whichtreasure + copper;
+                        break;
+            }
+        }
+
+        // test card play
         checkPlayAdventurer(&G, p);
     }
 
-
-
-
-
     return 0;
 }
-
-
-
-
-
-
-/*
-int main() {
-    char msg[1024];
-    int newCards = 0;
-    int discarded = 1;
-    //int xtraCoins = 0;
-    int shuffledCards = 0;
-    int extraBuys = 0;
-
-    int i,j;
-    int handpos = 0, choice1 = 0, choice2 = 0, choice3 = 0, bonus = 0;
-    int seed = 1000;
-    int numPlayers = 2;
-    int thisPlayer = 0;
-	struct gameState G, testG;
-	int k[10] = {adventurer, embargo, village, minion, mine, cutpurse,
-			sea_hag, tribute, smithy, council_room};
-
-	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
-
-	// ----------- TEST 1: no treasures in deck - gain nothing --------------
-	printf("TEST 1: no treasures in deck - gain nothing\n");
-	// initialize a game state and player cards
-    memset(&G,'\0',sizeof(struct gameState));
-	initializeGame(numPlayers, k, seed, &G);
-    thisPlayer = 0;
-    newCards = 0;   
-    handpos = 0;
-    extraBuys = 0;
-    //xtraCoins = 0;
-
-    // put TESTCARD in player's hand
-    G.hand[thisPlayer][handpos] = adventurer;
-    // make sure there are no treasures in hand
-    for (i = 1; i < G.handCount[thisPlayer]; i++){    
-        G.hand[thisPlayer][i] = estate;
-    }
-    memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
-    // supply piles
-    for (j = 0; j <= treasure_map; j++){
-        sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);
-        ASSERT2(testG.supplyCount[j] == G.supplyCount[j], msg);
-    }
-    // hand count
-    sprintf(msg,"hand count = %d, expected = %d", testG.handCount[thisPlayer], G.handCount[thisPlayer] - discarded);
-    ASSERT2(testG.handCount[thisPlayer] == G.handCount[thisPlayer] - discarded, msg);
-    // deck count
-    sprintf(msg,"deck count = %d, expected = %d", testG.deckCount[thisPlayer], G.deckCount[thisPlayer] - newCards + shuffledCards);
-    ASSERT2(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards, msg);
-    // discard count
-    sprintf(msg,"discard count = %d, expected = %d", testG.discardCount[thisPlayer], G.discardCount[thisPlayer]+discarded);
-    ASSERT2(testG.discardCount[thisPlayer] == G.discardCount[thisPlayer]+discarded, msg);
-    // buys
-    sprintf(msg,"buys = %d, expected = %d", testG.numBuys, G.numBuys + extraBuys);
-    ASSERT2(testG.numBuys == G.numBuys + extraBuys, msg);
-
-
-
-	// ----------- TEST 2: only 1 treasure in deck - +1 in hand  --------------
-	printf("TEST 2: 1 treasure in deck - +1 in hand\n");
-	// initialize a game state and player cards
-    memset(&G,'\0',sizeof(struct gameState));
-	initializeGame(numPlayers, k, seed, &G);
-    thisPlayer = 0;
-    newCards = 1;   
-    handpos = 0;
-    extraBuys = 0;
-    //xtraCoins = 1;
-
-    // put TESTCARD in player's hand
-    G.hand[thisPlayer][handpos] = adventurer;
-    G.hand[thisPlayer][handpos+1] = copper;
-    // make sure there is only one treasure in hand
-    for (i = 2; i < G.handCount[thisPlayer]; i++){    
-        G.hand[thisPlayer][i] = estate;
-    }
-    memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
-    // supply piles
-    for (j = 0; j <= treasure_map; j++){
-        sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);
-        ASSERT2(testG.supplyCount[j] == G.supplyCount[j], msg);
-    }
-    // hand count
-    sprintf(msg,"hand count = %d, expected = %d", testG.handCount[thisPlayer], G.handCount[thisPlayer] + newCards - discarded);
-    ASSERT2(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded, msg);
-    // deck count
-    sprintf(msg,"deck count = %d, expected = %d", testG.deckCount[thisPlayer], G.deckCount[thisPlayer] - newCards + shuffledCards);
-    ASSERT2(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards, msg);
-    // discard count
-    sprintf(msg,"discard count = %d, expected = %d", testG.discardCount[thisPlayer], G.discardCount[thisPlayer]+discarded);
-    ASSERT2(testG.discardCount[thisPlayer] == G.discardCount[thisPlayer]+discarded, msg);
-    // buys
-    sprintf(msg,"buys = %d, expected = %d", testG.numBuys, G.numBuys + extraBuys);
-    ASSERT2(testG.numBuys == G.numBuys + extraBuys, msg);
-
-
-
-
-	// ----------- TEST 3: 2 treasures in deck - +2 in hand  --------------
-	printf("TEST 3: 2 treasures in deck - +2 in hand\n");
-    memset(&G,'\0',sizeof(struct gameState));
-	initializeGame(numPlayers, k, seed, &G);
-    thisPlayer = 0;
-    newCards = 2;   
-    handpos = 0;
-    extraBuys = 0;
-    //xtraCoins = 2;
-
-    // put TESTCARD in player's hand
-    G.hand[thisPlayer][handpos] = adventurer;
-    G.hand[thisPlayer][handpos+1] = copper;
-    G.hand[thisPlayer][handpos+2] = copper;
-    // make sure there is only one treasure in hand
-    for (i = 3; i < G.handCount[thisPlayer]; i++){    
-        G.hand[thisPlayer][i] = estate;
-    }
-    memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
-    // supply piles
-    for (j = 0; j <= treasure_map; j++){
-        sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);
-        ASSERT2(testG.supplyCount[j] == G.supplyCount[j], msg);
-    }
-    // hand count
-    sprintf(msg,"hand count = %d, expected = %d", testG.handCount[thisPlayer], G.handCount[thisPlayer] + newCards - discarded);
-    ASSERT2(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded, msg);
-    // deck count
-    sprintf(msg,"deck count = %d, expected = %d", testG.deckCount[thisPlayer], G.deckCount[thisPlayer] - newCards + shuffledCards);
-    ASSERT2(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards, msg);
-    // discard count
-    sprintf(msg,"discard count = %d, expected = %d", testG.discardCount[thisPlayer], G.discardCount[thisPlayer]+discarded);
-    ASSERT2(testG.discardCount[thisPlayer] == G.discardCount[thisPlayer]+discarded, msg);
-    // buys
-    sprintf(msg,"buys = %d, expected = %d", testG.numBuys, G.numBuys + extraBuys);
-    ASSERT2(testG.numBuys == G.numBuys + extraBuys, msg);
-    
-
-
-
-
-
-	return 0;
-}
-
-*/
