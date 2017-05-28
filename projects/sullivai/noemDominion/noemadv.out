@@ -1,0 +1,97 @@
+----------------- Testing Card: adventurer ----------------
+TEST 1: no treasures in deck - gain nothing
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+     TEST FAILED: hand count = 6, expected = 4
+     TEST FAILED: deck count = 4, expected = 5
+     TEST FAILED: discard count = 0, expected = 1
+TEST PASSED: buys = 1, expected = 1
+TEST 2: 1 treasure in deck - +1 in hand
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+     TEST FAILED: hand count = 6, expected = 5
+TEST PASSED: deck count = 4, expected = 4
+     TEST FAILED: discard count = 0, expected = 1
+TEST PASSED: buys = 1, expected = 1
+TEST 3: 2 treasures in deck - +2 in hand
+TEST PASSED: supply[0] = 10, expected 10
+TEST PASSED: supply[1] = 8, expected 8
+TEST PASSED: supply[2] = 8, expected 8
+TEST PASSED: supply[3] = 8, expected 8
+TEST PASSED: supply[4] = 46, expected 46
+TEST PASSED: supply[5] = 40, expected 40
+TEST PASSED: supply[6] = 30, expected 30
+TEST PASSED: supply[7] = 10, expected 10
+TEST PASSED: supply[8] = 10, expected 10
+TEST PASSED: supply[9] = -1, expected -1
+TEST PASSED: supply[10] = -1, expected -1
+TEST PASSED: supply[11] = 10, expected 10
+TEST PASSED: supply[12] = -1, expected -1
+TEST PASSED: supply[13] = 10, expected 10
+TEST PASSED: supply[14] = 10, expected 10
+TEST PASSED: supply[15] = -1, expected -1
+TEST PASSED: supply[16] = -1, expected -1
+TEST PASSED: supply[17] = 10, expected 10
+TEST PASSED: supply[18] = -1, expected -1
+TEST PASSED: supply[19] = 10, expected 10
+TEST PASSED: supply[20] = -1, expected -1
+TEST PASSED: supply[21] = 10, expected 10
+TEST PASSED: supply[22] = 10, expected 10
+TEST PASSED: supply[23] = -1, expected -1
+TEST PASSED: supply[24] = -1, expected -1
+TEST PASSED: supply[25] = 10, expected 10
+TEST PASSED: supply[26] = -1, expected -1
+TEST PASSED: hand count = 6, expected = 6
+     TEST FAILED: deck count = 4, expected = 3
+     TEST FAILED: discard count = 0, expected = 1
+TEST PASSED: buys = 1, expected = 1

@@ -69,7 +69,8 @@ int main() {
         G.hand[thisPlayer][i] = estate;
     }
     memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
+    //cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
+    aAdventurer(&testG, thisPlayer);
     // supply piles
     for (j = 0; j <= treasure_map; j++){
         sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);
@@ -109,7 +110,8 @@ int main() {
         G.hand[thisPlayer][i] = estate;
     }
     memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
+    //cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
+    aAdventurer(&testG, thisPlayer);
     // supply piles
     for (j = 0; j <= treasure_map; j++){
         sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);
@@ -150,7 +152,8 @@ int main() {
         G.hand[thisPlayer][i] = estate;
     }
     memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
+    //cardEffect(adventurer, choice1, choice2, choice3, &testG, handpos, &bonus);
+    aAdventurer(&testG, thisPlayer);
     // supply piles
     for (j = 0; j <= treasure_map; j++){
         sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);

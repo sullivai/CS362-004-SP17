@@ -63,3 +63,5 @@ runtests: cardtest1.o cardtest2.o cardtest3.o cardtest4.o unittest1.o unittest2.
 	./randomtestcard2 >> testresults.out
 	./randomtestadventurer >> testresults.out
 
+clean:
+	rm -f *.o *.gcov *.gcda *.gcno *.so cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4 randomtestcard1 randomtestcard2 randomtestadventurer

@@ -53,7 +53,8 @@ int main() {
     // put TESTCARD in player's hand
     G.hand[thisPlayer][handpos] = council_room;    
     memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(council_room, choice1, choice2, choice3, &testG, handpos, &bonus);
+    //cardEffect(council_room, choice1, choice2, choice3, &testG, handpos, &bonus);
+    cCouncilRoom(&testG, thisPlayer,  handpos);
     // supply piles
     for (j = 0; j <= treasure_map; j++){
         sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);
@@ -91,7 +92,8 @@ int main() {
         // put TESTCARD in player's hand
         G.hand[thisPlayer][handpos] = council_room;    
         memcpy(&testG, &G, sizeof(struct gameState));
-        cardEffect(council_room, choice1, choice2, choice3, &testG, handpos, &bonus);
+    //    cardEffect(council_room, choice1, choice2, choice3, &testG, handpos, &bonus);
+        cCouncilRoom(&testG, thisPlayer,  handpos);
         // card in played pile
         sprintf(msg,"handpos = %d, played card = %d, expected = %d", handpos, testG.playedCards[testG.playedCardCount-1], council_room);
         ASSERT2(testG.playedCards[testG.playedCardCount-1] == council_room, msg);
@@ -115,7 +117,8 @@ int main() {
     // put TESTCARD in player's hand
     G.hand[thisPlayer][handpos] = council_room;    
     memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(council_room, choice1, choice2, choice3, &testG, handpos, &bonus);
+    //cardEffect(council_room, choice1, choice2, choice3, &testG, handpos, &bonus);
+    cCouncilRoom(&testG, thisPlayer,  handpos);
 
     // check other players' hand/deck/discard 
     for (j = 1; j < numPlayers; j++){

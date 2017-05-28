@@ -63,7 +63,8 @@ int main() {
     // put TESTCARD in player's hand
     G.hand[thisPlayer][handpos] = smithy;    
     memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(smithy, choice1, choice2, choice3, &testG, handpos, &bonus);
+    //cardEffect(smithy, choice1, choice2, choice3, &testG, handpos, &bonus);
+    sSmithy(&testG, thisPlayer, handpos);
     // supply piles
     for (j = 0; j <= treasure_map; j++){
         sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);
@@ -101,7 +102,8 @@ int main() {
         // put TESTCARD in player's hand
         G.hand[thisPlayer][handpos] = smithy;    
         memcpy(&testG, &G, sizeof(struct gameState));
-        cardEffect(smithy, choice1, choice2, choice3, &testG, handpos, &bonus);
+        //cardEffect(smithy, choice1, choice2, choice3, &testG, handpos, &bonus);
+        sSmithy(&testG, thisPlayer, handpos);
         // card in played pile
         sprintf(msg,"handpos = %d, played card = %d, expected = %d", handpos, testG.playedCards[testG.playedCardCount-1], smithy);
         ASSERT2(testG.playedCards[testG.playedCardCount-1] == smithy, msg);
@@ -125,7 +127,8 @@ int main() {
     // put TESTCARD in player's hand
     G.hand[thisPlayer][handpos] = smithy;    
     memcpy(&testG, &G, sizeof(struct gameState));
-    cardEffect(smithy, choice1, choice2, choice3, &testG, handpos, &bonus);
+    //cardEffect(smithy, choice1, choice2, choice3, &testG, handpos, &bonus);
+    sSmithy(&testG, thisPlayer, handpos);
 
     // check other players' hand/deck/discard 
     for (j = 1; j < numPlayers; j++){

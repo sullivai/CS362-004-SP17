@@ -1,0 +1,233 @@
+Noverse Bug Reporting Template
+==============================
+ID:     001
+
+Title:  Hand and deck count incorrect after playing smithy card  
+
+Class:  Serious Bug
+
+Date:         28 May 2017  
+Reported By:  Aimee Sullivan 
+Email:        sullivai@oregonstate.edu
+
+
+Product:   dominion.c           Version:  noem - assignment 2
+Platform:  CentOS Linux         Version:  7.2.1511
+Browser:   N/A                  Version:  N/A
+URL:       N/A
+
+Is it reproducible: Yes 
+
+Description
+===========
+After the card smithy is played, the hand count is one less than expected and the deck count is one more than expected for the current player.
+
+
+Steps to Produce/Reproduce
+--------------------------
+1. Initialize a game state.
+2. Copy smithy card into player's hand.
+3. Play smithy from hand position.
+
+
+Expected Results
+----------------
+Hand count +2, deck + discard count -2 from original counts
+
+
+Actual Results
+--------------
+Hand count +1, deck + discard -1 from original counts.
+
+
+Workarounds
+-----------
+N/A
+
+
+Attachments
+-----------
+N/A
+
+
+Other Information
+-----------------
+see section noemcard1.out below
+
+
+
+============================================================
+============================================================
+ID:     002
+
+Title:  Discard count incorrect after playing adventurer card  
+
+Class:  Serious Bug
+
+Date:         28 May 2017  
+Reported By:  Aimee Sullivan 
+Email:        sullivai@oregonstate.edu
+
+
+Product:   dominion.c           Version:  noem - assignment 2
+Platform:  CentOS Linux         Version:  7.2.1511
+Browser:   N/A                  Version:  N/A
+URL:       N/A
+
+Is it reproducible: Yes 
+
+Description
+===========
+After the card adventurer is played the discard count is incorrect.
+
+
+Steps to Produce/Reproduce
+--------------------------
+1. Initialize a game state.
+2. Copy adventurer card into player's hand.
+3. (Optionally copy 0,1,or 2 treasures into player's hand or randomly generate treasure count in hand.)
+4. Play adventurer from hand position.
+
+
+Expected Results
+----------------
++1 discarded count
+
+
+Actual Results
+--------------
+0 discarded count
+
+
+Workarounds
+-----------
+N/A
+
+
+Attachments
+-----------
+N/A
+
+
+Other Information
+-----------------
+see section noemcard2.out below
+
+
+
+============================================================
+============================================================
+ID:     003
+
+Title:  Hand count/deck count incorrect after playing adventurer with more than one treasure drawn
+
+Class:  Serious Bug
+
+Date:         28 May 2017  
+Reported By:  Aimee Sullivan 
+Email:        sullivai@oregonstate.edu
+
+
+Product:   dominion.c           Version:  noem - assignment 2
+Platform:  CentOS Linux         Version:  7.2.1511
+Browser:   N/A                  Version:  N/A
+URL:       N/A
+
+Is it reproducible: Yes 
+
+Description
+===========
+After the card adventurer is played with more than one treasure in the deck, the hand and deck counts are incorrect.
+
+
+Steps to Produce/Reproduce
+--------------------------
+1. Initialize a game state.
+2. Copy adventurer card into player's hand.
+3. (Optionally copy 2 treasures into player's hand or randomly generate treasure count in hand.)
+4. Play adventurer from hand position.
+
+
+Expected Results
+----------------
++2 hand count
+-2 deck/discard count
+
+
+Actual Results
+--------------
++1 hand count
+-1 deck/discard count
+
+
+Workarounds
+-----------
+N/A
+
+
+Attachments
+-----------
+N/A
+
+
+Other Information
+-----------------
+see section noemrtadv.out below
+
+
+
+
+===============================================================
+================          noemcard1.out        ================
+===============================================================
+----------------- Testing Card: smithy ----------------
+
+TEST 1: play smithy - draw 3/discard 1 = +2 in hand, -3 in deck,+0 buys, +0 coins
+...
+     TEST FAILED: hand count = 6, expected = 7
+     TEST FAILED: deck count = 3, expected = 2
+TEST PASSED: discard count = 0, expected = 0
+TEST PASSED: played count = 1, expected = 1
+...
+
+
+
+===============================================================
+================          noemcard2.out        ================
+===============================================================
+  1 ----------------- Testing Card: adventurer ----------------
+  2 TEST 1: no treasures in deck - gain nothing
+...
+ 30      TEST FAILED: hand count = 6, expected = 4
+ 31      TEST FAILED: deck count = 4, expected = 5
+ 32      TEST FAILED: discard count = 0, expected = 1
+...
+ 34 TEST 2: 1 treasure in deck - +1 in hand
+...
+ 62      TEST FAILED: hand count = 6, expected = 5
+ 63 TEST PASSED: deck count = 4, expected = 4
+ 64      TEST FAILED: discard count = 0, expected = 1
+...
+ 66 TEST 3: 2 treasures in deck - +2 in hand
+...
+ 94 TEST PASSED: hand count = 6, expected = 6
+ 95      TEST FAILED: deck count = 4, expected = 3
+ 96      TEST FAILED: discard count = 0, expected = 1
+
+
+
+
+===============================================================
+================          noemrtadv.out        ================
+===============================================================
+...
+ 3351 PRE: treasures in discard & deck: 3 in hand: 1
+...
+ 3355      TEST FAILED: treasures = 3 hand = 2, expected = 3
+ 3356      TEST FAILED: treasures = 3 deck+disc = 2, expected = 1
+...
+
+
+
+
+
