@@ -117,8 +117,8 @@ int main() {
         memcpy(G.hand[p],gardenses,sizeof(int)*G.handCount[p]);
         memcpy(G.discard[p],gardenses,sizeof(int)*G.discardCount[p]);
         memcpy(G.deck[p],gardenses,sizeof(int)*G.deckCount[p]);
-        sprintf(msg,"GARDEN with %d in hand, %d in discard, %d in deck. Score: %d Expected: %d", handCount, discardCount, deckCount, scoreFor(p,&G), (totalCards/10));
-        ASSERT2(scoreFor(p,&G) == (totalCards/10),msg);   
+        sprintf(msg,"GARDEN with %d in hand, %d in discard, %d in deck. Score: %d Expected: %d", handCount, discardCount, deckCount, scoreFor(p,&G), (totalCards/10)*fullDeckCount(p,gardens,&G));
+        ASSERT2(scoreFor(p,&G) == (totalCards/10)*fullDeckCount(p,gardens,&G),msg);   
     }
     }
     }

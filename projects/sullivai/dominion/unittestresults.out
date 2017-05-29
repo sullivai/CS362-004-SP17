@@ -9,29 +9,29 @@ TEST PASSED: DUCHY with 0 in hand, 0 in discard, 0 in deck. Score: 0 Expected: 0
 TEST PASSED: PROVINCE with 0 in hand, 0 in discard, 0 in deck. Score: 0 Expected: 0
 TEST PASSED: GREAT_HALL with 0 in hand, 0 in discard, 0 in deck. Score: 0 Expected: 0
 TEST PASSED: GARDEN with 0 in hand, 0 in discard, 0 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 0 in discard, 1 in deck. Score: 0 Expected: -1
-     TEST FAILED: ESTATE with 0 in hand, 0 in discard, 1 in deck. Score: 0 Expected: 1
-     TEST FAILED: DUCHY with 0 in hand, 0 in discard, 1 in deck. Score: 0 Expected: 3
-     TEST FAILED: PROVINCE with 0 in hand, 0 in discard, 1 in deck. Score: 0 Expected: 6
-     TEST FAILED: GREAT_HALL with 0 in hand, 0 in discard, 1 in deck. Score: 0 Expected: 1
+TEST PASSED: CURSE with 0 in hand, 0 in discard, 1 in deck. Score: -1 Expected: -1
+TEST PASSED: ESTATE with 0 in hand, 0 in discard, 1 in deck. Score: 1 Expected: 1
+TEST PASSED: DUCHY with 0 in hand, 0 in discard, 1 in deck. Score: 3 Expected: 3
+TEST PASSED: PROVINCE with 0 in hand, 0 in discard, 1 in deck. Score: 6 Expected: 6
+TEST PASSED: GREAT_HALL with 0 in hand, 0 in discard, 1 in deck. Score: 1 Expected: 1
 TEST PASSED: GARDEN with 0 in hand, 0 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 0 in discard, 2 in deck. Score: 0 Expected: -2
-     TEST FAILED: ESTATE with 0 in hand, 0 in discard, 2 in deck. Score: 0 Expected: 2
-     TEST FAILED: DUCHY with 0 in hand, 0 in discard, 2 in deck. Score: 0 Expected: 6
-     TEST FAILED: PROVINCE with 0 in hand, 0 in discard, 2 in deck. Score: 0 Expected: 12
-     TEST FAILED: GREAT_HALL with 0 in hand, 0 in discard, 2 in deck. Score: 0 Expected: 2
+TEST PASSED: CURSE with 0 in hand, 0 in discard, 2 in deck. Score: -2 Expected: -2
+TEST PASSED: ESTATE with 0 in hand, 0 in discard, 2 in deck. Score: 2 Expected: 2
+TEST PASSED: DUCHY with 0 in hand, 0 in discard, 2 in deck. Score: 6 Expected: 6
+TEST PASSED: PROVINCE with 0 in hand, 0 in discard, 2 in deck. Score: 12 Expected: 12
+TEST PASSED: GREAT_HALL with 0 in hand, 0 in discard, 2 in deck. Score: 2 Expected: 2
 TEST PASSED: GARDEN with 0 in hand, 0 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 0 in discard, 3 in deck. Score: 0 Expected: -3
-     TEST FAILED: ESTATE with 0 in hand, 0 in discard, 3 in deck. Score: 0 Expected: 3
-     TEST FAILED: DUCHY with 0 in hand, 0 in discard, 3 in deck. Score: 0 Expected: 9
-     TEST FAILED: PROVINCE with 0 in hand, 0 in discard, 3 in deck. Score: 0 Expected: 18
-     TEST FAILED: GREAT_HALL with 0 in hand, 0 in discard, 3 in deck. Score: 0 Expected: 3
+TEST PASSED: CURSE with 0 in hand, 0 in discard, 3 in deck. Score: -3 Expected: -3
+TEST PASSED: ESTATE with 0 in hand, 0 in discard, 3 in deck. Score: 3 Expected: 3
+TEST PASSED: DUCHY with 0 in hand, 0 in discard, 3 in deck. Score: 9 Expected: 9
+TEST PASSED: PROVINCE with 0 in hand, 0 in discard, 3 in deck. Score: 18 Expected: 18
+TEST PASSED: GREAT_HALL with 0 in hand, 0 in discard, 3 in deck. Score: 3 Expected: 3
 TEST PASSED: GARDEN with 0 in hand, 0 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 0 in discard, 4 in deck. Score: 0 Expected: -4
-     TEST FAILED: ESTATE with 0 in hand, 0 in discard, 4 in deck. Score: 0 Expected: 4
-     TEST FAILED: DUCHY with 0 in hand, 0 in discard, 4 in deck. Score: 0 Expected: 12
-     TEST FAILED: PROVINCE with 0 in hand, 0 in discard, 4 in deck. Score: 0 Expected: 24
-     TEST FAILED: GREAT_HALL with 0 in hand, 0 in discard, 4 in deck. Score: 0 Expected: 4
+TEST PASSED: CURSE with 0 in hand, 0 in discard, 4 in deck. Score: -4 Expected: -4
+TEST PASSED: ESTATE with 0 in hand, 0 in discard, 4 in deck. Score: 4 Expected: 4
+TEST PASSED: DUCHY with 0 in hand, 0 in discard, 4 in deck. Score: 12 Expected: 12
+TEST PASSED: PROVINCE with 0 in hand, 0 in discard, 4 in deck. Score: 24 Expected: 24
+TEST PASSED: GREAT_HALL with 0 in hand, 0 in discard, 4 in deck. Score: 4 Expected: 4
 TEST PASSED: GARDEN with 0 in hand, 0 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 0 in hand, 1 in discard, 0 in deck. Score: -1 Expected: -1
 TEST PASSED: ESTATE with 0 in hand, 1 in discard, 0 in deck. Score: 1 Expected: 1
@@ -45,23 +45,23 @@ TEST PASSED: DUCHY with 0 in hand, 1 in discard, 1 in deck. Score: 6 Expected: 6
 TEST PASSED: PROVINCE with 0 in hand, 1 in discard, 1 in deck. Score: 12 Expected: 12
 TEST PASSED: GREAT_HALL with 0 in hand, 1 in discard, 1 in deck. Score: 2 Expected: 2
 TEST PASSED: GARDEN with 0 in hand, 1 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 1 in discard, 2 in deck. Score: -2 Expected: -3
-     TEST FAILED: ESTATE with 0 in hand, 1 in discard, 2 in deck. Score: 2 Expected: 3
-     TEST FAILED: DUCHY with 0 in hand, 1 in discard, 2 in deck. Score: 6 Expected: 9
-     TEST FAILED: PROVINCE with 0 in hand, 1 in discard, 2 in deck. Score: 12 Expected: 18
-     TEST FAILED: GREAT_HALL with 0 in hand, 1 in discard, 2 in deck. Score: 2 Expected: 3
+TEST PASSED: CURSE with 0 in hand, 1 in discard, 2 in deck. Score: -3 Expected: -3
+TEST PASSED: ESTATE with 0 in hand, 1 in discard, 2 in deck. Score: 3 Expected: 3
+TEST PASSED: DUCHY with 0 in hand, 1 in discard, 2 in deck. Score: 9 Expected: 9
+TEST PASSED: PROVINCE with 0 in hand, 1 in discard, 2 in deck. Score: 18 Expected: 18
+TEST PASSED: GREAT_HALL with 0 in hand, 1 in discard, 2 in deck. Score: 3 Expected: 3
 TEST PASSED: GARDEN with 0 in hand, 1 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 1 in discard, 3 in deck. Score: -2 Expected: -4
-     TEST FAILED: ESTATE with 0 in hand, 1 in discard, 3 in deck. Score: 2 Expected: 4
-     TEST FAILED: DUCHY with 0 in hand, 1 in discard, 3 in deck. Score: 6 Expected: 12
-     TEST FAILED: PROVINCE with 0 in hand, 1 in discard, 3 in deck. Score: 12 Expected: 24
-     TEST FAILED: GREAT_HALL with 0 in hand, 1 in discard, 3 in deck. Score: 2 Expected: 4
+TEST PASSED: CURSE with 0 in hand, 1 in discard, 3 in deck. Score: -4 Expected: -4
+TEST PASSED: ESTATE with 0 in hand, 1 in discard, 3 in deck. Score: 4 Expected: 4
+TEST PASSED: DUCHY with 0 in hand, 1 in discard, 3 in deck. Score: 12 Expected: 12
+TEST PASSED: PROVINCE with 0 in hand, 1 in discard, 3 in deck. Score: 24 Expected: 24
+TEST PASSED: GREAT_HALL with 0 in hand, 1 in discard, 3 in deck. Score: 4 Expected: 4
 TEST PASSED: GARDEN with 0 in hand, 1 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 1 in discard, 4 in deck. Score: -2 Expected: -5
-     TEST FAILED: ESTATE with 0 in hand, 1 in discard, 4 in deck. Score: 2 Expected: 5
-     TEST FAILED: DUCHY with 0 in hand, 1 in discard, 4 in deck. Score: 6 Expected: 15
-     TEST FAILED: PROVINCE with 0 in hand, 1 in discard, 4 in deck. Score: 12 Expected: 30
-     TEST FAILED: GREAT_HALL with 0 in hand, 1 in discard, 4 in deck. Score: 2 Expected: 5
+TEST PASSED: CURSE with 0 in hand, 1 in discard, 4 in deck. Score: -5 Expected: -5
+TEST PASSED: ESTATE with 0 in hand, 1 in discard, 4 in deck. Score: 5 Expected: 5
+TEST PASSED: DUCHY with 0 in hand, 1 in discard, 4 in deck. Score: 15 Expected: 15
+TEST PASSED: PROVINCE with 0 in hand, 1 in discard, 4 in deck. Score: 30 Expected: 30
+TEST PASSED: GREAT_HALL with 0 in hand, 1 in discard, 4 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 0 in hand, 1 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 0 in hand, 2 in discard, 0 in deck. Score: -2 Expected: -2
 TEST PASSED: ESTATE with 0 in hand, 2 in discard, 0 in deck. Score: 2 Expected: 2
@@ -81,17 +81,17 @@ TEST PASSED: DUCHY with 0 in hand, 2 in discard, 2 in deck. Score: 12 Expected: 
 TEST PASSED: PROVINCE with 0 in hand, 2 in discard, 2 in deck. Score: 24 Expected: 24
 TEST PASSED: GREAT_HALL with 0 in hand, 2 in discard, 2 in deck. Score: 4 Expected: 4
 TEST PASSED: GARDEN with 0 in hand, 2 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 2 in discard, 3 in deck. Score: -4 Expected: -5
-     TEST FAILED: ESTATE with 0 in hand, 2 in discard, 3 in deck. Score: 4 Expected: 5
-     TEST FAILED: DUCHY with 0 in hand, 2 in discard, 3 in deck. Score: 12 Expected: 15
-     TEST FAILED: PROVINCE with 0 in hand, 2 in discard, 3 in deck. Score: 24 Expected: 30
-     TEST FAILED: GREAT_HALL with 0 in hand, 2 in discard, 3 in deck. Score: 4 Expected: 5
+TEST PASSED: CURSE with 0 in hand, 2 in discard, 3 in deck. Score: -5 Expected: -5
+TEST PASSED: ESTATE with 0 in hand, 2 in discard, 3 in deck. Score: 5 Expected: 5
+TEST PASSED: DUCHY with 0 in hand, 2 in discard, 3 in deck. Score: 15 Expected: 15
+TEST PASSED: PROVINCE with 0 in hand, 2 in discard, 3 in deck. Score: 30 Expected: 30
+TEST PASSED: GREAT_HALL with 0 in hand, 2 in discard, 3 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 0 in hand, 2 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 2 in discard, 4 in deck. Score: -4 Expected: -6
-     TEST FAILED: ESTATE with 0 in hand, 2 in discard, 4 in deck. Score: 4 Expected: 6
-     TEST FAILED: DUCHY with 0 in hand, 2 in discard, 4 in deck. Score: 12 Expected: 18
-     TEST FAILED: PROVINCE with 0 in hand, 2 in discard, 4 in deck. Score: 24 Expected: 36
-     TEST FAILED: GREAT_HALL with 0 in hand, 2 in discard, 4 in deck. Score: 4 Expected: 6
+TEST PASSED: CURSE with 0 in hand, 2 in discard, 4 in deck. Score: -6 Expected: -6
+TEST PASSED: ESTATE with 0 in hand, 2 in discard, 4 in deck. Score: 6 Expected: 6
+TEST PASSED: DUCHY with 0 in hand, 2 in discard, 4 in deck. Score: 18 Expected: 18
+TEST PASSED: PROVINCE with 0 in hand, 2 in discard, 4 in deck. Score: 36 Expected: 36
+TEST PASSED: GREAT_HALL with 0 in hand, 2 in discard, 4 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 0 in hand, 2 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 0 in hand, 3 in discard, 0 in deck. Score: -3 Expected: -3
 TEST PASSED: ESTATE with 0 in hand, 3 in discard, 0 in deck. Score: 3 Expected: 3
@@ -117,11 +117,11 @@ TEST PASSED: DUCHY with 0 in hand, 3 in discard, 3 in deck. Score: 18 Expected: 
 TEST PASSED: PROVINCE with 0 in hand, 3 in discard, 3 in deck. Score: 36 Expected: 36
 TEST PASSED: GREAT_HALL with 0 in hand, 3 in discard, 3 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 0 in hand, 3 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 0 in hand, 3 in discard, 4 in deck. Score: -6 Expected: -7
-     TEST FAILED: ESTATE with 0 in hand, 3 in discard, 4 in deck. Score: 6 Expected: 7
-     TEST FAILED: DUCHY with 0 in hand, 3 in discard, 4 in deck. Score: 18 Expected: 21
-     TEST FAILED: PROVINCE with 0 in hand, 3 in discard, 4 in deck. Score: 36 Expected: 42
-     TEST FAILED: GREAT_HALL with 0 in hand, 3 in discard, 4 in deck. Score: 6 Expected: 7
+TEST PASSED: CURSE with 0 in hand, 3 in discard, 4 in deck. Score: -7 Expected: -7
+TEST PASSED: ESTATE with 0 in hand, 3 in discard, 4 in deck. Score: 7 Expected: 7
+TEST PASSED: DUCHY with 0 in hand, 3 in discard, 4 in deck. Score: 21 Expected: 21
+TEST PASSED: PROVINCE with 0 in hand, 3 in discard, 4 in deck. Score: 42 Expected: 42
+TEST PASSED: GREAT_HALL with 0 in hand, 3 in discard, 4 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 0 in hand, 3 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 0 in hand, 4 in discard, 0 in deck. Score: -4 Expected: -4
 TEST PASSED: ESTATE with 0 in hand, 4 in discard, 0 in deck. Score: 4 Expected: 4
@@ -159,29 +159,29 @@ TEST PASSED: DUCHY with 1 in hand, 0 in discard, 0 in deck. Score: 3 Expected: 3
 TEST PASSED: PROVINCE with 1 in hand, 0 in discard, 0 in deck. Score: 6 Expected: 6
 TEST PASSED: GREAT_HALL with 1 in hand, 0 in discard, 0 in deck. Score: 1 Expected: 1
 TEST PASSED: GARDEN with 1 in hand, 0 in discard, 0 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 0 in discard, 1 in deck. Score: -1 Expected: -2
-     TEST FAILED: ESTATE with 1 in hand, 0 in discard, 1 in deck. Score: 1 Expected: 2
-     TEST FAILED: DUCHY with 1 in hand, 0 in discard, 1 in deck. Score: 3 Expected: 6
-     TEST FAILED: PROVINCE with 1 in hand, 0 in discard, 1 in deck. Score: 6 Expected: 12
-     TEST FAILED: GREAT_HALL with 1 in hand, 0 in discard, 1 in deck. Score: 1 Expected: 2
+TEST PASSED: CURSE with 1 in hand, 0 in discard, 1 in deck. Score: -2 Expected: -2
+TEST PASSED: ESTATE with 1 in hand, 0 in discard, 1 in deck. Score: 2 Expected: 2
+TEST PASSED: DUCHY with 1 in hand, 0 in discard, 1 in deck. Score: 6 Expected: 6
+TEST PASSED: PROVINCE with 1 in hand, 0 in discard, 1 in deck. Score: 12 Expected: 12
+TEST PASSED: GREAT_HALL with 1 in hand, 0 in discard, 1 in deck. Score: 2 Expected: 2
 TEST PASSED: GARDEN with 1 in hand, 0 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 0 in discard, 2 in deck. Score: -1 Expected: -3
-     TEST FAILED: ESTATE with 1 in hand, 0 in discard, 2 in deck. Score: 1 Expected: 3
-     TEST FAILED: DUCHY with 1 in hand, 0 in discard, 2 in deck. Score: 3 Expected: 9
-     TEST FAILED: PROVINCE with 1 in hand, 0 in discard, 2 in deck. Score: 6 Expected: 18
-     TEST FAILED: GREAT_HALL with 1 in hand, 0 in discard, 2 in deck. Score: 1 Expected: 3
+TEST PASSED: CURSE with 1 in hand, 0 in discard, 2 in deck. Score: -3 Expected: -3
+TEST PASSED: ESTATE with 1 in hand, 0 in discard, 2 in deck. Score: 3 Expected: 3
+TEST PASSED: DUCHY with 1 in hand, 0 in discard, 2 in deck. Score: 9 Expected: 9
+TEST PASSED: PROVINCE with 1 in hand, 0 in discard, 2 in deck. Score: 18 Expected: 18
+TEST PASSED: GREAT_HALL with 1 in hand, 0 in discard, 2 in deck. Score: 3 Expected: 3
 TEST PASSED: GARDEN with 1 in hand, 0 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 0 in discard, 3 in deck. Score: -1 Expected: -4
-     TEST FAILED: ESTATE with 1 in hand, 0 in discard, 3 in deck. Score: 1 Expected: 4
-     TEST FAILED: DUCHY with 1 in hand, 0 in discard, 3 in deck. Score: 3 Expected: 12
-     TEST FAILED: PROVINCE with 1 in hand, 0 in discard, 3 in deck. Score: 6 Expected: 24
-     TEST FAILED: GREAT_HALL with 1 in hand, 0 in discard, 3 in deck. Score: 1 Expected: 4
+TEST PASSED: CURSE with 1 in hand, 0 in discard, 3 in deck. Score: -4 Expected: -4
+TEST PASSED: ESTATE with 1 in hand, 0 in discard, 3 in deck. Score: 4 Expected: 4
+TEST PASSED: DUCHY with 1 in hand, 0 in discard, 3 in deck. Score: 12 Expected: 12
+TEST PASSED: PROVINCE with 1 in hand, 0 in discard, 3 in deck. Score: 24 Expected: 24
+TEST PASSED: GREAT_HALL with 1 in hand, 0 in discard, 3 in deck. Score: 4 Expected: 4
 TEST PASSED: GARDEN with 1 in hand, 0 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 0 in discard, 4 in deck. Score: -1 Expected: -5
-     TEST FAILED: ESTATE with 1 in hand, 0 in discard, 4 in deck. Score: 1 Expected: 5
-     TEST FAILED: DUCHY with 1 in hand, 0 in discard, 4 in deck. Score: 3 Expected: 15
-     TEST FAILED: PROVINCE with 1 in hand, 0 in discard, 4 in deck. Score: 6 Expected: 30
-     TEST FAILED: GREAT_HALL with 1 in hand, 0 in discard, 4 in deck. Score: 1 Expected: 5
+TEST PASSED: CURSE with 1 in hand, 0 in discard, 4 in deck. Score: -5 Expected: -5
+TEST PASSED: ESTATE with 1 in hand, 0 in discard, 4 in deck. Score: 5 Expected: 5
+TEST PASSED: DUCHY with 1 in hand, 0 in discard, 4 in deck. Score: 15 Expected: 15
+TEST PASSED: PROVINCE with 1 in hand, 0 in discard, 4 in deck. Score: 30 Expected: 30
+TEST PASSED: GREAT_HALL with 1 in hand, 0 in discard, 4 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 1 in hand, 0 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 1 in hand, 1 in discard, 0 in deck. Score: -2 Expected: -2
 TEST PASSED: ESTATE with 1 in hand, 1 in discard, 0 in deck. Score: 2 Expected: 2
@@ -195,23 +195,23 @@ TEST PASSED: DUCHY with 1 in hand, 1 in discard, 1 in deck. Score: 9 Expected: 9
 TEST PASSED: PROVINCE with 1 in hand, 1 in discard, 1 in deck. Score: 18 Expected: 18
 TEST PASSED: GREAT_HALL with 1 in hand, 1 in discard, 1 in deck. Score: 3 Expected: 3
 TEST PASSED: GARDEN with 1 in hand, 1 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 1 in discard, 2 in deck. Score: -3 Expected: -4
-     TEST FAILED: ESTATE with 1 in hand, 1 in discard, 2 in deck. Score: 3 Expected: 4
-     TEST FAILED: DUCHY with 1 in hand, 1 in discard, 2 in deck. Score: 9 Expected: 12
-     TEST FAILED: PROVINCE with 1 in hand, 1 in discard, 2 in deck. Score: 18 Expected: 24
-     TEST FAILED: GREAT_HALL with 1 in hand, 1 in discard, 2 in deck. Score: 3 Expected: 4
+TEST PASSED: CURSE with 1 in hand, 1 in discard, 2 in deck. Score: -4 Expected: -4
+TEST PASSED: ESTATE with 1 in hand, 1 in discard, 2 in deck. Score: 4 Expected: 4
+TEST PASSED: DUCHY with 1 in hand, 1 in discard, 2 in deck. Score: 12 Expected: 12
+TEST PASSED: PROVINCE with 1 in hand, 1 in discard, 2 in deck. Score: 24 Expected: 24
+TEST PASSED: GREAT_HALL with 1 in hand, 1 in discard, 2 in deck. Score: 4 Expected: 4
 TEST PASSED: GARDEN with 1 in hand, 1 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 1 in discard, 3 in deck. Score: -3 Expected: -5
-     TEST FAILED: ESTATE with 1 in hand, 1 in discard, 3 in deck. Score: 3 Expected: 5
-     TEST FAILED: DUCHY with 1 in hand, 1 in discard, 3 in deck. Score: 9 Expected: 15
-     TEST FAILED: PROVINCE with 1 in hand, 1 in discard, 3 in deck. Score: 18 Expected: 30
-     TEST FAILED: GREAT_HALL with 1 in hand, 1 in discard, 3 in deck. Score: 3 Expected: 5
+TEST PASSED: CURSE with 1 in hand, 1 in discard, 3 in deck. Score: -5 Expected: -5
+TEST PASSED: ESTATE with 1 in hand, 1 in discard, 3 in deck. Score: 5 Expected: 5
+TEST PASSED: DUCHY with 1 in hand, 1 in discard, 3 in deck. Score: 15 Expected: 15
+TEST PASSED: PROVINCE with 1 in hand, 1 in discard, 3 in deck. Score: 30 Expected: 30
+TEST PASSED: GREAT_HALL with 1 in hand, 1 in discard, 3 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 1 in hand, 1 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 1 in discard, 4 in deck. Score: -3 Expected: -6
-     TEST FAILED: ESTATE with 1 in hand, 1 in discard, 4 in deck. Score: 3 Expected: 6
-     TEST FAILED: DUCHY with 1 in hand, 1 in discard, 4 in deck. Score: 9 Expected: 18
-     TEST FAILED: PROVINCE with 1 in hand, 1 in discard, 4 in deck. Score: 18 Expected: 36
-     TEST FAILED: GREAT_HALL with 1 in hand, 1 in discard, 4 in deck. Score: 3 Expected: 6
+TEST PASSED: CURSE with 1 in hand, 1 in discard, 4 in deck. Score: -6 Expected: -6
+TEST PASSED: ESTATE with 1 in hand, 1 in discard, 4 in deck. Score: 6 Expected: 6
+TEST PASSED: DUCHY with 1 in hand, 1 in discard, 4 in deck. Score: 18 Expected: 18
+TEST PASSED: PROVINCE with 1 in hand, 1 in discard, 4 in deck. Score: 36 Expected: 36
+TEST PASSED: GREAT_HALL with 1 in hand, 1 in discard, 4 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 1 in hand, 1 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 1 in hand, 2 in discard, 0 in deck. Score: -3 Expected: -3
 TEST PASSED: ESTATE with 1 in hand, 2 in discard, 0 in deck. Score: 3 Expected: 3
@@ -231,17 +231,17 @@ TEST PASSED: DUCHY with 1 in hand, 2 in discard, 2 in deck. Score: 15 Expected: 
 TEST PASSED: PROVINCE with 1 in hand, 2 in discard, 2 in deck. Score: 30 Expected: 30
 TEST PASSED: GREAT_HALL with 1 in hand, 2 in discard, 2 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 1 in hand, 2 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 2 in discard, 3 in deck. Score: -5 Expected: -6
-     TEST FAILED: ESTATE with 1 in hand, 2 in discard, 3 in deck. Score: 5 Expected: 6
-     TEST FAILED: DUCHY with 1 in hand, 2 in discard, 3 in deck. Score: 15 Expected: 18
-     TEST FAILED: PROVINCE with 1 in hand, 2 in discard, 3 in deck. Score: 30 Expected: 36
-     TEST FAILED: GREAT_HALL with 1 in hand, 2 in discard, 3 in deck. Score: 5 Expected: 6
+TEST PASSED: CURSE with 1 in hand, 2 in discard, 3 in deck. Score: -6 Expected: -6
+TEST PASSED: ESTATE with 1 in hand, 2 in discard, 3 in deck. Score: 6 Expected: 6
+TEST PASSED: DUCHY with 1 in hand, 2 in discard, 3 in deck. Score: 18 Expected: 18
+TEST PASSED: PROVINCE with 1 in hand, 2 in discard, 3 in deck. Score: 36 Expected: 36
+TEST PASSED: GREAT_HALL with 1 in hand, 2 in discard, 3 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 1 in hand, 2 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 2 in discard, 4 in deck. Score: -5 Expected: -7
-     TEST FAILED: ESTATE with 1 in hand, 2 in discard, 4 in deck. Score: 5 Expected: 7
-     TEST FAILED: DUCHY with 1 in hand, 2 in discard, 4 in deck. Score: 15 Expected: 21
-     TEST FAILED: PROVINCE with 1 in hand, 2 in discard, 4 in deck. Score: 30 Expected: 42
-     TEST FAILED: GREAT_HALL with 1 in hand, 2 in discard, 4 in deck. Score: 5 Expected: 7
+TEST PASSED: CURSE with 1 in hand, 2 in discard, 4 in deck. Score: -7 Expected: -7
+TEST PASSED: ESTATE with 1 in hand, 2 in discard, 4 in deck. Score: 7 Expected: 7
+TEST PASSED: DUCHY with 1 in hand, 2 in discard, 4 in deck. Score: 21 Expected: 21
+TEST PASSED: PROVINCE with 1 in hand, 2 in discard, 4 in deck. Score: 42 Expected: 42
+TEST PASSED: GREAT_HALL with 1 in hand, 2 in discard, 4 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 1 in hand, 2 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 1 in hand, 3 in discard, 0 in deck. Score: -4 Expected: -4
 TEST PASSED: ESTATE with 1 in hand, 3 in discard, 0 in deck. Score: 4 Expected: 4
@@ -267,11 +267,11 @@ TEST PASSED: DUCHY with 1 in hand, 3 in discard, 3 in deck. Score: 21 Expected: 
 TEST PASSED: PROVINCE with 1 in hand, 3 in discard, 3 in deck. Score: 42 Expected: 42
 TEST PASSED: GREAT_HALL with 1 in hand, 3 in discard, 3 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 1 in hand, 3 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 1 in hand, 3 in discard, 4 in deck. Score: -7 Expected: -8
-     TEST FAILED: ESTATE with 1 in hand, 3 in discard, 4 in deck. Score: 7 Expected: 8
-     TEST FAILED: DUCHY with 1 in hand, 3 in discard, 4 in deck. Score: 21 Expected: 24
-     TEST FAILED: PROVINCE with 1 in hand, 3 in discard, 4 in deck. Score: 42 Expected: 48
-     TEST FAILED: GREAT_HALL with 1 in hand, 3 in discard, 4 in deck. Score: 7 Expected: 8
+TEST PASSED: CURSE with 1 in hand, 3 in discard, 4 in deck. Score: -8 Expected: -8
+TEST PASSED: ESTATE with 1 in hand, 3 in discard, 4 in deck. Score: 8 Expected: 8
+TEST PASSED: DUCHY with 1 in hand, 3 in discard, 4 in deck. Score: 24 Expected: 24
+TEST PASSED: PROVINCE with 1 in hand, 3 in discard, 4 in deck. Score: 48 Expected: 48
+TEST PASSED: GREAT_HALL with 1 in hand, 3 in discard, 4 in deck. Score: 8 Expected: 8
 TEST PASSED: GARDEN with 1 in hand, 3 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 1 in hand, 4 in discard, 0 in deck. Score: -5 Expected: -5
 TEST PASSED: ESTATE with 1 in hand, 4 in discard, 0 in deck. Score: 5 Expected: 5
@@ -309,29 +309,29 @@ TEST PASSED: DUCHY with 2 in hand, 0 in discard, 0 in deck. Score: 6 Expected: 6
 TEST PASSED: PROVINCE with 2 in hand, 0 in discard, 0 in deck. Score: 12 Expected: 12
 TEST PASSED: GREAT_HALL with 2 in hand, 0 in discard, 0 in deck. Score: 2 Expected: 2
 TEST PASSED: GARDEN with 2 in hand, 0 in discard, 0 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 0 in discard, 1 in deck. Score: -2 Expected: -3
-     TEST FAILED: ESTATE with 2 in hand, 0 in discard, 1 in deck. Score: 2 Expected: 3
-     TEST FAILED: DUCHY with 2 in hand, 0 in discard, 1 in deck. Score: 6 Expected: 9
-     TEST FAILED: PROVINCE with 2 in hand, 0 in discard, 1 in deck. Score: 12 Expected: 18
-     TEST FAILED: GREAT_HALL with 2 in hand, 0 in discard, 1 in deck. Score: 2 Expected: 3
+TEST PASSED: CURSE with 2 in hand, 0 in discard, 1 in deck. Score: -3 Expected: -3
+TEST PASSED: ESTATE with 2 in hand, 0 in discard, 1 in deck. Score: 3 Expected: 3
+TEST PASSED: DUCHY with 2 in hand, 0 in discard, 1 in deck. Score: 9 Expected: 9
+TEST PASSED: PROVINCE with 2 in hand, 0 in discard, 1 in deck. Score: 18 Expected: 18
+TEST PASSED: GREAT_HALL with 2 in hand, 0 in discard, 1 in deck. Score: 3 Expected: 3
 TEST PASSED: GARDEN with 2 in hand, 0 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 0 in discard, 2 in deck. Score: -2 Expected: -4
-     TEST FAILED: ESTATE with 2 in hand, 0 in discard, 2 in deck. Score: 2 Expected: 4
-     TEST FAILED: DUCHY with 2 in hand, 0 in discard, 2 in deck. Score: 6 Expected: 12
-     TEST FAILED: PROVINCE with 2 in hand, 0 in discard, 2 in deck. Score: 12 Expected: 24
-     TEST FAILED: GREAT_HALL with 2 in hand, 0 in discard, 2 in deck. Score: 2 Expected: 4
+TEST PASSED: CURSE with 2 in hand, 0 in discard, 2 in deck. Score: -4 Expected: -4
+TEST PASSED: ESTATE with 2 in hand, 0 in discard, 2 in deck. Score: 4 Expected: 4
+TEST PASSED: DUCHY with 2 in hand, 0 in discard, 2 in deck. Score: 12 Expected: 12
+TEST PASSED: PROVINCE with 2 in hand, 0 in discard, 2 in deck. Score: 24 Expected: 24
+TEST PASSED: GREAT_HALL with 2 in hand, 0 in discard, 2 in deck. Score: 4 Expected: 4
 TEST PASSED: GARDEN with 2 in hand, 0 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 0 in discard, 3 in deck. Score: -2 Expected: -5
-     TEST FAILED: ESTATE with 2 in hand, 0 in discard, 3 in deck. Score: 2 Expected: 5
-     TEST FAILED: DUCHY with 2 in hand, 0 in discard, 3 in deck. Score: 6 Expected: 15
-     TEST FAILED: PROVINCE with 2 in hand, 0 in discard, 3 in deck. Score: 12 Expected: 30
-     TEST FAILED: GREAT_HALL with 2 in hand, 0 in discard, 3 in deck. Score: 2 Expected: 5
+TEST PASSED: CURSE with 2 in hand, 0 in discard, 3 in deck. Score: -5 Expected: -5
+TEST PASSED: ESTATE with 2 in hand, 0 in discard, 3 in deck. Score: 5 Expected: 5
+TEST PASSED: DUCHY with 2 in hand, 0 in discard, 3 in deck. Score: 15 Expected: 15
+TEST PASSED: PROVINCE with 2 in hand, 0 in discard, 3 in deck. Score: 30 Expected: 30
+TEST PASSED: GREAT_HALL with 2 in hand, 0 in discard, 3 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 2 in hand, 0 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 0 in discard, 4 in deck. Score: -2 Expected: -6
-     TEST FAILED: ESTATE with 2 in hand, 0 in discard, 4 in deck. Score: 2 Expected: 6
-     TEST FAILED: DUCHY with 2 in hand, 0 in discard, 4 in deck. Score: 6 Expected: 18
-     TEST FAILED: PROVINCE with 2 in hand, 0 in discard, 4 in deck. Score: 12 Expected: 36
-     TEST FAILED: GREAT_HALL with 2 in hand, 0 in discard, 4 in deck. Score: 2 Expected: 6
+TEST PASSED: CURSE with 2 in hand, 0 in discard, 4 in deck. Score: -6 Expected: -6
+TEST PASSED: ESTATE with 2 in hand, 0 in discard, 4 in deck. Score: 6 Expected: 6
+TEST PASSED: DUCHY with 2 in hand, 0 in discard, 4 in deck. Score: 18 Expected: 18
+TEST PASSED: PROVINCE with 2 in hand, 0 in discard, 4 in deck. Score: 36 Expected: 36
+TEST PASSED: GREAT_HALL with 2 in hand, 0 in discard, 4 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 2 in hand, 0 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 2 in hand, 1 in discard, 0 in deck. Score: -3 Expected: -3
 TEST PASSED: ESTATE with 2 in hand, 1 in discard, 0 in deck. Score: 3 Expected: 3
@@ -345,23 +345,23 @@ TEST PASSED: DUCHY with 2 in hand, 1 in discard, 1 in deck. Score: 12 Expected: 
 TEST PASSED: PROVINCE with 2 in hand, 1 in discard, 1 in deck. Score: 24 Expected: 24
 TEST PASSED: GREAT_HALL with 2 in hand, 1 in discard, 1 in deck. Score: 4 Expected: 4
 TEST PASSED: GARDEN with 2 in hand, 1 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 1 in discard, 2 in deck. Score: -4 Expected: -5
-     TEST FAILED: ESTATE with 2 in hand, 1 in discard, 2 in deck. Score: 4 Expected: 5
-     TEST FAILED: DUCHY with 2 in hand, 1 in discard, 2 in deck. Score: 12 Expected: 15
-     TEST FAILED: PROVINCE with 2 in hand, 1 in discard, 2 in deck. Score: 24 Expected: 30
-     TEST FAILED: GREAT_HALL with 2 in hand, 1 in discard, 2 in deck. Score: 4 Expected: 5
+TEST PASSED: CURSE with 2 in hand, 1 in discard, 2 in deck. Score: -5 Expected: -5
+TEST PASSED: ESTATE with 2 in hand, 1 in discard, 2 in deck. Score: 5 Expected: 5
+TEST PASSED: DUCHY with 2 in hand, 1 in discard, 2 in deck. Score: 15 Expected: 15
+TEST PASSED: PROVINCE with 2 in hand, 1 in discard, 2 in deck. Score: 30 Expected: 30
+TEST PASSED: GREAT_HALL with 2 in hand, 1 in discard, 2 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 2 in hand, 1 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 1 in discard, 3 in deck. Score: -4 Expected: -6
-     TEST FAILED: ESTATE with 2 in hand, 1 in discard, 3 in deck. Score: 4 Expected: 6
-     TEST FAILED: DUCHY with 2 in hand, 1 in discard, 3 in deck. Score: 12 Expected: 18
-     TEST FAILED: PROVINCE with 2 in hand, 1 in discard, 3 in deck. Score: 24 Expected: 36
-     TEST FAILED: GREAT_HALL with 2 in hand, 1 in discard, 3 in deck. Score: 4 Expected: 6
+TEST PASSED: CURSE with 2 in hand, 1 in discard, 3 in deck. Score: -6 Expected: -6
+TEST PASSED: ESTATE with 2 in hand, 1 in discard, 3 in deck. Score: 6 Expected: 6
+TEST PASSED: DUCHY with 2 in hand, 1 in discard, 3 in deck. Score: 18 Expected: 18
+TEST PASSED: PROVINCE with 2 in hand, 1 in discard, 3 in deck. Score: 36 Expected: 36
+TEST PASSED: GREAT_HALL with 2 in hand, 1 in discard, 3 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 2 in hand, 1 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 1 in discard, 4 in deck. Score: -4 Expected: -7
-     TEST FAILED: ESTATE with 2 in hand, 1 in discard, 4 in deck. Score: 4 Expected: 7
-     TEST FAILED: DUCHY with 2 in hand, 1 in discard, 4 in deck. Score: 12 Expected: 21
-     TEST FAILED: PROVINCE with 2 in hand, 1 in discard, 4 in deck. Score: 24 Expected: 42
-     TEST FAILED: GREAT_HALL with 2 in hand, 1 in discard, 4 in deck. Score: 4 Expected: 7
+TEST PASSED: CURSE with 2 in hand, 1 in discard, 4 in deck. Score: -7 Expected: -7
+TEST PASSED: ESTATE with 2 in hand, 1 in discard, 4 in deck. Score: 7 Expected: 7
+TEST PASSED: DUCHY with 2 in hand, 1 in discard, 4 in deck. Score: 21 Expected: 21
+TEST PASSED: PROVINCE with 2 in hand, 1 in discard, 4 in deck. Score: 42 Expected: 42
+TEST PASSED: GREAT_HALL with 2 in hand, 1 in discard, 4 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 2 in hand, 1 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 2 in hand, 2 in discard, 0 in deck. Score: -4 Expected: -4
 TEST PASSED: ESTATE with 2 in hand, 2 in discard, 0 in deck. Score: 4 Expected: 4
@@ -381,17 +381,17 @@ TEST PASSED: DUCHY with 2 in hand, 2 in discard, 2 in deck. Score: 18 Expected: 
 TEST PASSED: PROVINCE with 2 in hand, 2 in discard, 2 in deck. Score: 36 Expected: 36
 TEST PASSED: GREAT_HALL with 2 in hand, 2 in discard, 2 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 2 in hand, 2 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 2 in discard, 3 in deck. Score: -6 Expected: -7
-     TEST FAILED: ESTATE with 2 in hand, 2 in discard, 3 in deck. Score: 6 Expected: 7
-     TEST FAILED: DUCHY with 2 in hand, 2 in discard, 3 in deck. Score: 18 Expected: 21
-     TEST FAILED: PROVINCE with 2 in hand, 2 in discard, 3 in deck. Score: 36 Expected: 42
-     TEST FAILED: GREAT_HALL with 2 in hand, 2 in discard, 3 in deck. Score: 6 Expected: 7
+TEST PASSED: CURSE with 2 in hand, 2 in discard, 3 in deck. Score: -7 Expected: -7
+TEST PASSED: ESTATE with 2 in hand, 2 in discard, 3 in deck. Score: 7 Expected: 7
+TEST PASSED: DUCHY with 2 in hand, 2 in discard, 3 in deck. Score: 21 Expected: 21
+TEST PASSED: PROVINCE with 2 in hand, 2 in discard, 3 in deck. Score: 42 Expected: 42
+TEST PASSED: GREAT_HALL with 2 in hand, 2 in discard, 3 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 2 in hand, 2 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 2 in discard, 4 in deck. Score: -6 Expected: -8
-     TEST FAILED: ESTATE with 2 in hand, 2 in discard, 4 in deck. Score: 6 Expected: 8
-     TEST FAILED: DUCHY with 2 in hand, 2 in discard, 4 in deck. Score: 18 Expected: 24
-     TEST FAILED: PROVINCE with 2 in hand, 2 in discard, 4 in deck. Score: 36 Expected: 48
-     TEST FAILED: GREAT_HALL with 2 in hand, 2 in discard, 4 in deck. Score: 6 Expected: 8
+TEST PASSED: CURSE with 2 in hand, 2 in discard, 4 in deck. Score: -8 Expected: -8
+TEST PASSED: ESTATE with 2 in hand, 2 in discard, 4 in deck. Score: 8 Expected: 8
+TEST PASSED: DUCHY with 2 in hand, 2 in discard, 4 in deck. Score: 24 Expected: 24
+TEST PASSED: PROVINCE with 2 in hand, 2 in discard, 4 in deck. Score: 48 Expected: 48
+TEST PASSED: GREAT_HALL with 2 in hand, 2 in discard, 4 in deck. Score: 8 Expected: 8
 TEST PASSED: GARDEN with 2 in hand, 2 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 2 in hand, 3 in discard, 0 in deck. Score: -5 Expected: -5
 TEST PASSED: ESTATE with 2 in hand, 3 in discard, 0 in deck. Score: 5 Expected: 5
@@ -417,11 +417,11 @@ TEST PASSED: DUCHY with 2 in hand, 3 in discard, 3 in deck. Score: 24 Expected: 
 TEST PASSED: PROVINCE with 2 in hand, 3 in discard, 3 in deck. Score: 48 Expected: 48
 TEST PASSED: GREAT_HALL with 2 in hand, 3 in discard, 3 in deck. Score: 8 Expected: 8
 TEST PASSED: GARDEN with 2 in hand, 3 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 2 in hand, 3 in discard, 4 in deck. Score: -8 Expected: -9
-     TEST FAILED: ESTATE with 2 in hand, 3 in discard, 4 in deck. Score: 8 Expected: 9
-     TEST FAILED: DUCHY with 2 in hand, 3 in discard, 4 in deck. Score: 24 Expected: 27
-     TEST FAILED: PROVINCE with 2 in hand, 3 in discard, 4 in deck. Score: 48 Expected: 54
-     TEST FAILED: GREAT_HALL with 2 in hand, 3 in discard, 4 in deck. Score: 8 Expected: 9
+TEST PASSED: CURSE with 2 in hand, 3 in discard, 4 in deck. Score: -9 Expected: -9
+TEST PASSED: ESTATE with 2 in hand, 3 in discard, 4 in deck. Score: 9 Expected: 9
+TEST PASSED: DUCHY with 2 in hand, 3 in discard, 4 in deck. Score: 27 Expected: 27
+TEST PASSED: PROVINCE with 2 in hand, 3 in discard, 4 in deck. Score: 54 Expected: 54
+TEST PASSED: GREAT_HALL with 2 in hand, 3 in discard, 4 in deck. Score: 9 Expected: 9
 TEST PASSED: GARDEN with 2 in hand, 3 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 2 in hand, 4 in discard, 0 in deck. Score: -6 Expected: -6
 TEST PASSED: ESTATE with 2 in hand, 4 in discard, 0 in deck. Score: 6 Expected: 6
@@ -452,36 +452,36 @@ TEST PASSED: ESTATE with 2 in hand, 4 in discard, 4 in deck. Score: 10 Expected:
 TEST PASSED: DUCHY with 2 in hand, 4 in discard, 4 in deck. Score: 30 Expected: 30
 TEST PASSED: PROVINCE with 2 in hand, 4 in discard, 4 in deck. Score: 60 Expected: 60
 TEST PASSED: GREAT_HALL with 2 in hand, 4 in discard, 4 in deck. Score: 10 Expected: 10
-     TEST FAILED: GARDEN with 2 in hand, 4 in discard, 4 in deck. Score: 0 Expected: 1
+     TEST FAILED: GARDEN with 2 in hand, 4 in discard, 4 in deck. Score: 10 Expected: 1
 TEST PASSED: CURSE with 3 in hand, 0 in discard, 0 in deck. Score: -3 Expected: -3
 TEST PASSED: ESTATE with 3 in hand, 0 in discard, 0 in deck. Score: 3 Expected: 3
 TEST PASSED: DUCHY with 3 in hand, 0 in discard, 0 in deck. Score: 9 Expected: 9
 TEST PASSED: PROVINCE with 3 in hand, 0 in discard, 0 in deck. Score: 18 Expected: 18
 TEST PASSED: GREAT_HALL with 3 in hand, 0 in discard, 0 in deck. Score: 3 Expected: 3
 TEST PASSED: GARDEN with 3 in hand, 0 in discard, 0 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 0 in discard, 1 in deck. Score: -3 Expected: -4
-     TEST FAILED: ESTATE with 3 in hand, 0 in discard, 1 in deck. Score: 3 Expected: 4
-     TEST FAILED: DUCHY with 3 in hand, 0 in discard, 1 in deck. Score: 9 Expected: 12
-     TEST FAILED: PROVINCE with 3 in hand, 0 in discard, 1 in deck. Score: 18 Expected: 24
-     TEST FAILED: GREAT_HALL with 3 in hand, 0 in discard, 1 in deck. Score: 3 Expected: 4
+TEST PASSED: CURSE with 3 in hand, 0 in discard, 1 in deck. Score: -4 Expected: -4
+TEST PASSED: ESTATE with 3 in hand, 0 in discard, 1 in deck. Score: 4 Expected: 4
+TEST PASSED: DUCHY with 3 in hand, 0 in discard, 1 in deck. Score: 12 Expected: 12
+TEST PASSED: PROVINCE with 3 in hand, 0 in discard, 1 in deck. Score: 24 Expected: 24
+TEST PASSED: GREAT_HALL with 3 in hand, 0 in discard, 1 in deck. Score: 4 Expected: 4
 TEST PASSED: GARDEN with 3 in hand, 0 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 0 in discard, 2 in deck. Score: -3 Expected: -5
-     TEST FAILED: ESTATE with 3 in hand, 0 in discard, 2 in deck. Score: 3 Expected: 5
-     TEST FAILED: DUCHY with 3 in hand, 0 in discard, 2 in deck. Score: 9 Expected: 15
-     TEST FAILED: PROVINCE with 3 in hand, 0 in discard, 2 in deck. Score: 18 Expected: 30
-     TEST FAILED: GREAT_HALL with 3 in hand, 0 in discard, 2 in deck. Score: 3 Expected: 5
+TEST PASSED: CURSE with 3 in hand, 0 in discard, 2 in deck. Score: -5 Expected: -5
+TEST PASSED: ESTATE with 3 in hand, 0 in discard, 2 in deck. Score: 5 Expected: 5
+TEST PASSED: DUCHY with 3 in hand, 0 in discard, 2 in deck. Score: 15 Expected: 15
+TEST PASSED: PROVINCE with 3 in hand, 0 in discard, 2 in deck. Score: 30 Expected: 30
+TEST PASSED: GREAT_HALL with 3 in hand, 0 in discard, 2 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 3 in hand, 0 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 0 in discard, 3 in deck. Score: -3 Expected: -6
-     TEST FAILED: ESTATE with 3 in hand, 0 in discard, 3 in deck. Score: 3 Expected: 6
-     TEST FAILED: DUCHY with 3 in hand, 0 in discard, 3 in deck. Score: 9 Expected: 18
-     TEST FAILED: PROVINCE with 3 in hand, 0 in discard, 3 in deck. Score: 18 Expected: 36
-     TEST FAILED: GREAT_HALL with 3 in hand, 0 in discard, 3 in deck. Score: 3 Expected: 6
+TEST PASSED: CURSE with 3 in hand, 0 in discard, 3 in deck. Score: -6 Expected: -6
+TEST PASSED: ESTATE with 3 in hand, 0 in discard, 3 in deck. Score: 6 Expected: 6
+TEST PASSED: DUCHY with 3 in hand, 0 in discard, 3 in deck. Score: 18 Expected: 18
+TEST PASSED: PROVINCE with 3 in hand, 0 in discard, 3 in deck. Score: 36 Expected: 36
+TEST PASSED: GREAT_HALL with 3 in hand, 0 in discard, 3 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 3 in hand, 0 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 0 in discard, 4 in deck. Score: -3 Expected: -7
-     TEST FAILED: ESTATE with 3 in hand, 0 in discard, 4 in deck. Score: 3 Expected: 7
-     TEST FAILED: DUCHY with 3 in hand, 0 in discard, 4 in deck. Score: 9 Expected: 21
-     TEST FAILED: PROVINCE with 3 in hand, 0 in discard, 4 in deck. Score: 18 Expected: 42
-     TEST FAILED: GREAT_HALL with 3 in hand, 0 in discard, 4 in deck. Score: 3 Expected: 7
+TEST PASSED: CURSE with 3 in hand, 0 in discard, 4 in deck. Score: -7 Expected: -7
+TEST PASSED: ESTATE with 3 in hand, 0 in discard, 4 in deck. Score: 7 Expected: 7
+TEST PASSED: DUCHY with 3 in hand, 0 in discard, 4 in deck. Score: 21 Expected: 21
+TEST PASSED: PROVINCE with 3 in hand, 0 in discard, 4 in deck. Score: 42 Expected: 42
+TEST PASSED: GREAT_HALL with 3 in hand, 0 in discard, 4 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 3 in hand, 0 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 3 in hand, 1 in discard, 0 in deck. Score: -4 Expected: -4
 TEST PASSED: ESTATE with 3 in hand, 1 in discard, 0 in deck. Score: 4 Expected: 4
@@ -495,23 +495,23 @@ TEST PASSED: DUCHY with 3 in hand, 1 in discard, 1 in deck. Score: 15 Expected: 
 TEST PASSED: PROVINCE with 3 in hand, 1 in discard, 1 in deck. Score: 30 Expected: 30
 TEST PASSED: GREAT_HALL with 3 in hand, 1 in discard, 1 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 3 in hand, 1 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 1 in discard, 2 in deck. Score: -5 Expected: -6
-     TEST FAILED: ESTATE with 3 in hand, 1 in discard, 2 in deck. Score: 5 Expected: 6
-     TEST FAILED: DUCHY with 3 in hand, 1 in discard, 2 in deck. Score: 15 Expected: 18
-     TEST FAILED: PROVINCE with 3 in hand, 1 in discard, 2 in deck. Score: 30 Expected: 36
-     TEST FAILED: GREAT_HALL with 3 in hand, 1 in discard, 2 in deck. Score: 5 Expected: 6
+TEST PASSED: CURSE with 3 in hand, 1 in discard, 2 in deck. Score: -6 Expected: -6
+TEST PASSED: ESTATE with 3 in hand, 1 in discard, 2 in deck. Score: 6 Expected: 6
+TEST PASSED: DUCHY with 3 in hand, 1 in discard, 2 in deck. Score: 18 Expected: 18
+TEST PASSED: PROVINCE with 3 in hand, 1 in discard, 2 in deck. Score: 36 Expected: 36
+TEST PASSED: GREAT_HALL with 3 in hand, 1 in discard, 2 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 3 in hand, 1 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 1 in discard, 3 in deck. Score: -5 Expected: -7
-     TEST FAILED: ESTATE with 3 in hand, 1 in discard, 3 in deck. Score: 5 Expected: 7
-     TEST FAILED: DUCHY with 3 in hand, 1 in discard, 3 in deck. Score: 15 Expected: 21
-     TEST FAILED: PROVINCE with 3 in hand, 1 in discard, 3 in deck. Score: 30 Expected: 42
-     TEST FAILED: GREAT_HALL with 3 in hand, 1 in discard, 3 in deck. Score: 5 Expected: 7
+TEST PASSED: CURSE with 3 in hand, 1 in discard, 3 in deck. Score: -7 Expected: -7
+TEST PASSED: ESTATE with 3 in hand, 1 in discard, 3 in deck. Score: 7 Expected: 7
+TEST PASSED: DUCHY with 3 in hand, 1 in discard, 3 in deck. Score: 21 Expected: 21
+TEST PASSED: PROVINCE with 3 in hand, 1 in discard, 3 in deck. Score: 42 Expected: 42
+TEST PASSED: GREAT_HALL with 3 in hand, 1 in discard, 3 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 3 in hand, 1 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 1 in discard, 4 in deck. Score: -5 Expected: -8
-     TEST FAILED: ESTATE with 3 in hand, 1 in discard, 4 in deck. Score: 5 Expected: 8
-     TEST FAILED: DUCHY with 3 in hand, 1 in discard, 4 in deck. Score: 15 Expected: 24
-     TEST FAILED: PROVINCE with 3 in hand, 1 in discard, 4 in deck. Score: 30 Expected: 48
-     TEST FAILED: GREAT_HALL with 3 in hand, 1 in discard, 4 in deck. Score: 5 Expected: 8
+TEST PASSED: CURSE with 3 in hand, 1 in discard, 4 in deck. Score: -8 Expected: -8
+TEST PASSED: ESTATE with 3 in hand, 1 in discard, 4 in deck. Score: 8 Expected: 8
+TEST PASSED: DUCHY with 3 in hand, 1 in discard, 4 in deck. Score: 24 Expected: 24
+TEST PASSED: PROVINCE with 3 in hand, 1 in discard, 4 in deck. Score: 48 Expected: 48
+TEST PASSED: GREAT_HALL with 3 in hand, 1 in discard, 4 in deck. Score: 8 Expected: 8
 TEST PASSED: GARDEN with 3 in hand, 1 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 3 in hand, 2 in discard, 0 in deck. Score: -5 Expected: -5
 TEST PASSED: ESTATE with 3 in hand, 2 in discard, 0 in deck. Score: 5 Expected: 5
@@ -531,17 +531,17 @@ TEST PASSED: DUCHY with 3 in hand, 2 in discard, 2 in deck. Score: 21 Expected: 
 TEST PASSED: PROVINCE with 3 in hand, 2 in discard, 2 in deck. Score: 42 Expected: 42
 TEST PASSED: GREAT_HALL with 3 in hand, 2 in discard, 2 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 3 in hand, 2 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 2 in discard, 3 in deck. Score: -7 Expected: -8
-     TEST FAILED: ESTATE with 3 in hand, 2 in discard, 3 in deck. Score: 7 Expected: 8
-     TEST FAILED: DUCHY with 3 in hand, 2 in discard, 3 in deck. Score: 21 Expected: 24
-     TEST FAILED: PROVINCE with 3 in hand, 2 in discard, 3 in deck. Score: 42 Expected: 48
-     TEST FAILED: GREAT_HALL with 3 in hand, 2 in discard, 3 in deck. Score: 7 Expected: 8
+TEST PASSED: CURSE with 3 in hand, 2 in discard, 3 in deck. Score: -8 Expected: -8
+TEST PASSED: ESTATE with 3 in hand, 2 in discard, 3 in deck. Score: 8 Expected: 8
+TEST PASSED: DUCHY with 3 in hand, 2 in discard, 3 in deck. Score: 24 Expected: 24
+TEST PASSED: PROVINCE with 3 in hand, 2 in discard, 3 in deck. Score: 48 Expected: 48
+TEST PASSED: GREAT_HALL with 3 in hand, 2 in discard, 3 in deck. Score: 8 Expected: 8
 TEST PASSED: GARDEN with 3 in hand, 2 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 2 in discard, 4 in deck. Score: -7 Expected: -9
-     TEST FAILED: ESTATE with 3 in hand, 2 in discard, 4 in deck. Score: 7 Expected: 9
-     TEST FAILED: DUCHY with 3 in hand, 2 in discard, 4 in deck. Score: 21 Expected: 27
-     TEST FAILED: PROVINCE with 3 in hand, 2 in discard, 4 in deck. Score: 42 Expected: 54
-     TEST FAILED: GREAT_HALL with 3 in hand, 2 in discard, 4 in deck. Score: 7 Expected: 9
+TEST PASSED: CURSE with 3 in hand, 2 in discard, 4 in deck. Score: -9 Expected: -9
+TEST PASSED: ESTATE with 3 in hand, 2 in discard, 4 in deck. Score: 9 Expected: 9
+TEST PASSED: DUCHY with 3 in hand, 2 in discard, 4 in deck. Score: 27 Expected: 27
+TEST PASSED: PROVINCE with 3 in hand, 2 in discard, 4 in deck. Score: 54 Expected: 54
+TEST PASSED: GREAT_HALL with 3 in hand, 2 in discard, 4 in deck. Score: 9 Expected: 9
 TEST PASSED: GARDEN with 3 in hand, 2 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 3 in hand, 3 in discard, 0 in deck. Score: -6 Expected: -6
 TEST PASSED: ESTATE with 3 in hand, 3 in discard, 0 in deck. Score: 6 Expected: 6
@@ -567,12 +567,12 @@ TEST PASSED: DUCHY with 3 in hand, 3 in discard, 3 in deck. Score: 27 Expected: 
 TEST PASSED: PROVINCE with 3 in hand, 3 in discard, 3 in deck. Score: 54 Expected: 54
 TEST PASSED: GREAT_HALL with 3 in hand, 3 in discard, 3 in deck. Score: 9 Expected: 9
 TEST PASSED: GARDEN with 3 in hand, 3 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 3 in discard, 4 in deck. Score: -9 Expected: -10
-     TEST FAILED: ESTATE with 3 in hand, 3 in discard, 4 in deck. Score: 9 Expected: 10
-     TEST FAILED: DUCHY with 3 in hand, 3 in discard, 4 in deck. Score: 27 Expected: 30
-     TEST FAILED: PROVINCE with 3 in hand, 3 in discard, 4 in deck. Score: 54 Expected: 60
-     TEST FAILED: GREAT_HALL with 3 in hand, 3 in discard, 4 in deck. Score: 9 Expected: 10
-     TEST FAILED: GARDEN with 3 in hand, 3 in discard, 4 in deck. Score: 0 Expected: 1
+TEST PASSED: CURSE with 3 in hand, 3 in discard, 4 in deck. Score: -10 Expected: -10
+TEST PASSED: ESTATE with 3 in hand, 3 in discard, 4 in deck. Score: 10 Expected: 10
+TEST PASSED: DUCHY with 3 in hand, 3 in discard, 4 in deck. Score: 30 Expected: 30
+TEST PASSED: PROVINCE with 3 in hand, 3 in discard, 4 in deck. Score: 60 Expected: 60
+TEST PASSED: GREAT_HALL with 3 in hand, 3 in discard, 4 in deck. Score: 10 Expected: 10
+     TEST FAILED: GARDEN with 3 in hand, 3 in discard, 4 in deck. Score: 10 Expected: 1
 TEST PASSED: CURSE with 3 in hand, 4 in discard, 0 in deck. Score: -7 Expected: -7
 TEST PASSED: ESTATE with 3 in hand, 4 in discard, 0 in deck. Score: 7 Expected: 7
 TEST PASSED: DUCHY with 3 in hand, 4 in discard, 0 in deck. Score: 21 Expected: 21
@@ -591,47 +591,47 @@ TEST PASSED: DUCHY with 3 in hand, 4 in discard, 2 in deck. Score: 27 Expected: 
 TEST PASSED: PROVINCE with 3 in hand, 4 in discard, 2 in deck. Score: 54 Expected: 54
 TEST PASSED: GREAT_HALL with 3 in hand, 4 in discard, 2 in deck. Score: 9 Expected: 9
 TEST PASSED: GARDEN with 3 in hand, 4 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 3 in hand, 4 in discard, 3 in deck. Score: -9 Expected: -10
+TEST PASSED: CURSE with 3 in hand, 4 in discard, 3 in deck. Score: -10 Expected: -10
 TEST PASSED: ESTATE with 3 in hand, 4 in discard, 3 in deck. Score: 10 Expected: 10
 TEST PASSED: DUCHY with 3 in hand, 4 in discard, 3 in deck. Score: 30 Expected: 30
 TEST PASSED: PROVINCE with 3 in hand, 4 in discard, 3 in deck. Score: 60 Expected: 60
 TEST PASSED: GREAT_HALL with 3 in hand, 4 in discard, 3 in deck. Score: 10 Expected: 10
-     TEST FAILED: GARDEN with 3 in hand, 4 in discard, 3 in deck. Score: 0 Expected: 1
+     TEST FAILED: GARDEN with 3 in hand, 4 in discard, 3 in deck. Score: 10 Expected: 1
 TEST PASSED: CURSE with 3 in hand, 4 in discard, 4 in deck. Score: -11 Expected: -11
 TEST PASSED: ESTATE with 3 in hand, 4 in discard, 4 in deck. Score: 11 Expected: 11
 TEST PASSED: DUCHY with 3 in hand, 4 in discard, 4 in deck. Score: 33 Expected: 33
 TEST PASSED: PROVINCE with 3 in hand, 4 in discard, 4 in deck. Score: 66 Expected: 66
 TEST PASSED: GREAT_HALL with 3 in hand, 4 in discard, 4 in deck. Score: 11 Expected: 11
-     TEST FAILED: GARDEN with 3 in hand, 4 in discard, 4 in deck. Score: 0 Expected: 1
+     TEST FAILED: GARDEN with 3 in hand, 4 in discard, 4 in deck. Score: 11 Expected: 1
 TEST PASSED: CURSE with 4 in hand, 0 in discard, 0 in deck. Score: -4 Expected: -4
 TEST PASSED: ESTATE with 4 in hand, 0 in discard, 0 in deck. Score: 4 Expected: 4
 TEST PASSED: DUCHY with 4 in hand, 0 in discard, 0 in deck. Score: 12 Expected: 12
 TEST PASSED: PROVINCE with 4 in hand, 0 in discard, 0 in deck. Score: 24 Expected: 24
 TEST PASSED: GREAT_HALL with 4 in hand, 0 in discard, 0 in deck. Score: 4 Expected: 4
 TEST PASSED: GARDEN with 4 in hand, 0 in discard, 0 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 0 in discard, 1 in deck. Score: -4 Expected: -5
-     TEST FAILED: ESTATE with 4 in hand, 0 in discard, 1 in deck. Score: 4 Expected: 5
-     TEST FAILED: DUCHY with 4 in hand, 0 in discard, 1 in deck. Score: 12 Expected: 15
-     TEST FAILED: PROVINCE with 4 in hand, 0 in discard, 1 in deck. Score: 24 Expected: 30
-     TEST FAILED: GREAT_HALL with 4 in hand, 0 in discard, 1 in deck. Score: 4 Expected: 5
+TEST PASSED: CURSE with 4 in hand, 0 in discard, 1 in deck. Score: -5 Expected: -5
+TEST PASSED: ESTATE with 4 in hand, 0 in discard, 1 in deck. Score: 5 Expected: 5
+TEST PASSED: DUCHY with 4 in hand, 0 in discard, 1 in deck. Score: 15 Expected: 15
+TEST PASSED: PROVINCE with 4 in hand, 0 in discard, 1 in deck. Score: 30 Expected: 30
+TEST PASSED: GREAT_HALL with 4 in hand, 0 in discard, 1 in deck. Score: 5 Expected: 5
 TEST PASSED: GARDEN with 4 in hand, 0 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 0 in discard, 2 in deck. Score: -4 Expected: -6
-     TEST FAILED: ESTATE with 4 in hand, 0 in discard, 2 in deck. Score: 4 Expected: 6
-     TEST FAILED: DUCHY with 4 in hand, 0 in discard, 2 in deck. Score: 12 Expected: 18
-     TEST FAILED: PROVINCE with 4 in hand, 0 in discard, 2 in deck. Score: 24 Expected: 36
-     TEST FAILED: GREAT_HALL with 4 in hand, 0 in discard, 2 in deck. Score: 4 Expected: 6
+TEST PASSED: CURSE with 4 in hand, 0 in discard, 2 in deck. Score: -6 Expected: -6
+TEST PASSED: ESTATE with 4 in hand, 0 in discard, 2 in deck. Score: 6 Expected: 6
+TEST PASSED: DUCHY with 4 in hand, 0 in discard, 2 in deck. Score: 18 Expected: 18
+TEST PASSED: PROVINCE with 4 in hand, 0 in discard, 2 in deck. Score: 36 Expected: 36
+TEST PASSED: GREAT_HALL with 4 in hand, 0 in discard, 2 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 4 in hand, 0 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 0 in discard, 3 in deck. Score: -4 Expected: -7
-     TEST FAILED: ESTATE with 4 in hand, 0 in discard, 3 in deck. Score: 4 Expected: 7
-     TEST FAILED: DUCHY with 4 in hand, 0 in discard, 3 in deck. Score: 12 Expected: 21
-     TEST FAILED: PROVINCE with 4 in hand, 0 in discard, 3 in deck. Score: 24 Expected: 42
-     TEST FAILED: GREAT_HALL with 4 in hand, 0 in discard, 3 in deck. Score: 4 Expected: 7
+TEST PASSED: CURSE with 4 in hand, 0 in discard, 3 in deck. Score: -7 Expected: -7
+TEST PASSED: ESTATE with 4 in hand, 0 in discard, 3 in deck. Score: 7 Expected: 7
+TEST PASSED: DUCHY with 4 in hand, 0 in discard, 3 in deck. Score: 21 Expected: 21
+TEST PASSED: PROVINCE with 4 in hand, 0 in discard, 3 in deck. Score: 42 Expected: 42
+TEST PASSED: GREAT_HALL with 4 in hand, 0 in discard, 3 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 4 in hand, 0 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 0 in discard, 4 in deck. Score: -4 Expected: -8
-     TEST FAILED: ESTATE with 4 in hand, 0 in discard, 4 in deck. Score: 4 Expected: 8
-     TEST FAILED: DUCHY with 4 in hand, 0 in discard, 4 in deck. Score: 12 Expected: 24
-     TEST FAILED: PROVINCE with 4 in hand, 0 in discard, 4 in deck. Score: 24 Expected: 48
-     TEST FAILED: GREAT_HALL with 4 in hand, 0 in discard, 4 in deck. Score: 4 Expected: 8
+TEST PASSED: CURSE with 4 in hand, 0 in discard, 4 in deck. Score: -8 Expected: -8
+TEST PASSED: ESTATE with 4 in hand, 0 in discard, 4 in deck. Score: 8 Expected: 8
+TEST PASSED: DUCHY with 4 in hand, 0 in discard, 4 in deck. Score: 24 Expected: 24
+TEST PASSED: PROVINCE with 4 in hand, 0 in discard, 4 in deck. Score: 48 Expected: 48
+TEST PASSED: GREAT_HALL with 4 in hand, 0 in discard, 4 in deck. Score: 8 Expected: 8
 TEST PASSED: GARDEN with 4 in hand, 0 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 4 in hand, 1 in discard, 0 in deck. Score: -5 Expected: -5
 TEST PASSED: ESTATE with 4 in hand, 1 in discard, 0 in deck. Score: 5 Expected: 5
@@ -645,23 +645,23 @@ TEST PASSED: DUCHY with 4 in hand, 1 in discard, 1 in deck. Score: 18 Expected: 
 TEST PASSED: PROVINCE with 4 in hand, 1 in discard, 1 in deck. Score: 36 Expected: 36
 TEST PASSED: GREAT_HALL with 4 in hand, 1 in discard, 1 in deck. Score: 6 Expected: 6
 TEST PASSED: GARDEN with 4 in hand, 1 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 1 in discard, 2 in deck. Score: -6 Expected: -7
-     TEST FAILED: ESTATE with 4 in hand, 1 in discard, 2 in deck. Score: 6 Expected: 7
-     TEST FAILED: DUCHY with 4 in hand, 1 in discard, 2 in deck. Score: 18 Expected: 21
-     TEST FAILED: PROVINCE with 4 in hand, 1 in discard, 2 in deck. Score: 36 Expected: 42
-     TEST FAILED: GREAT_HALL with 4 in hand, 1 in discard, 2 in deck. Score: 6 Expected: 7
+TEST PASSED: CURSE with 4 in hand, 1 in discard, 2 in deck. Score: -7 Expected: -7
+TEST PASSED: ESTATE with 4 in hand, 1 in discard, 2 in deck. Score: 7 Expected: 7
+TEST PASSED: DUCHY with 4 in hand, 1 in discard, 2 in deck. Score: 21 Expected: 21
+TEST PASSED: PROVINCE with 4 in hand, 1 in discard, 2 in deck. Score: 42 Expected: 42
+TEST PASSED: GREAT_HALL with 4 in hand, 1 in discard, 2 in deck. Score: 7 Expected: 7
 TEST PASSED: GARDEN with 4 in hand, 1 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 1 in discard, 3 in deck. Score: -6 Expected: -8
-     TEST FAILED: ESTATE with 4 in hand, 1 in discard, 3 in deck. Score: 6 Expected: 8
-     TEST FAILED: DUCHY with 4 in hand, 1 in discard, 3 in deck. Score: 18 Expected: 24
-     TEST FAILED: PROVINCE with 4 in hand, 1 in discard, 3 in deck. Score: 36 Expected: 48
-     TEST FAILED: GREAT_HALL with 4 in hand, 1 in discard, 3 in deck. Score: 6 Expected: 8
+TEST PASSED: CURSE with 4 in hand, 1 in discard, 3 in deck. Score: -8 Expected: -8
+TEST PASSED: ESTATE with 4 in hand, 1 in discard, 3 in deck. Score: 8 Expected: 8
+TEST PASSED: DUCHY with 4 in hand, 1 in discard, 3 in deck. Score: 24 Expected: 24
+TEST PASSED: PROVINCE with 4 in hand, 1 in discard, 3 in deck. Score: 48 Expected: 48
+TEST PASSED: GREAT_HALL with 4 in hand, 1 in discard, 3 in deck. Score: 8 Expected: 8
 TEST PASSED: GARDEN with 4 in hand, 1 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 1 in discard, 4 in deck. Score: -6 Expected: -9
-     TEST FAILED: ESTATE with 4 in hand, 1 in discard, 4 in deck. Score: 6 Expected: 9
-     TEST FAILED: DUCHY with 4 in hand, 1 in discard, 4 in deck. Score: 18 Expected: 27
-     TEST FAILED: PROVINCE with 4 in hand, 1 in discard, 4 in deck. Score: 36 Expected: 54
-     TEST FAILED: GREAT_HALL with 4 in hand, 1 in discard, 4 in deck. Score: 6 Expected: 9
+TEST PASSED: CURSE with 4 in hand, 1 in discard, 4 in deck. Score: -9 Expected: -9
+TEST PASSED: ESTATE with 4 in hand, 1 in discard, 4 in deck. Score: 9 Expected: 9
+TEST PASSED: DUCHY with 4 in hand, 1 in discard, 4 in deck. Score: 27 Expected: 27
+TEST PASSED: PROVINCE with 4 in hand, 1 in discard, 4 in deck. Score: 54 Expected: 54
+TEST PASSED: GREAT_HALL with 4 in hand, 1 in discard, 4 in deck. Score: 9 Expected: 9
 TEST PASSED: GARDEN with 4 in hand, 1 in discard, 4 in deck. Score: 0 Expected: 0
 TEST PASSED: CURSE with 4 in hand, 2 in discard, 0 in deck. Score: -6 Expected: -6
 TEST PASSED: ESTATE with 4 in hand, 2 in discard, 0 in deck. Score: 6 Expected: 6
@@ -681,18 +681,18 @@ TEST PASSED: DUCHY with 4 in hand, 2 in discard, 2 in deck. Score: 24 Expected: 
 TEST PASSED: PROVINCE with 4 in hand, 2 in discard, 2 in deck. Score: 48 Expected: 48
 TEST PASSED: GREAT_HALL with 4 in hand, 2 in discard, 2 in deck. Score: 8 Expected: 8
 TEST PASSED: GARDEN with 4 in hand, 2 in discard, 2 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 2 in discard, 3 in deck. Score: -8 Expected: -9
-     TEST FAILED: ESTATE with 4 in hand, 2 in discard, 3 in deck. Score: 8 Expected: 9
-     TEST FAILED: DUCHY with 4 in hand, 2 in discard, 3 in deck. Score: 24 Expected: 27
-     TEST FAILED: PROVINCE with 4 in hand, 2 in discard, 3 in deck. Score: 48 Expected: 54
-     TEST FAILED: GREAT_HALL with 4 in hand, 2 in discard, 3 in deck. Score: 8 Expected: 9
+TEST PASSED: CURSE with 4 in hand, 2 in discard, 3 in deck. Score: -9 Expected: -9
+TEST PASSED: ESTATE with 4 in hand, 2 in discard, 3 in deck. Score: 9 Expected: 9
+TEST PASSED: DUCHY with 4 in hand, 2 in discard, 3 in deck. Score: 27 Expected: 27
+TEST PASSED: PROVINCE with 4 in hand, 2 in discard, 3 in deck. Score: 54 Expected: 54
+TEST PASSED: GREAT_HALL with 4 in hand, 2 in discard, 3 in deck. Score: 9 Expected: 9
 TEST PASSED: GARDEN with 4 in hand, 2 in discard, 3 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 2 in discard, 4 in deck. Score: -8 Expected: -10
-     TEST FAILED: ESTATE with 4 in hand, 2 in discard, 4 in deck. Score: 8 Expected: 10
-     TEST FAILED: DUCHY with 4 in hand, 2 in discard, 4 in deck. Score: 24 Expected: 30
-     TEST FAILED: PROVINCE with 4 in hand, 2 in discard, 4 in deck. Score: 48 Expected: 60
-     TEST FAILED: GREAT_HALL with 4 in hand, 2 in discard, 4 in deck. Score: 8 Expected: 10
-     TEST FAILED: GARDEN with 4 in hand, 2 in discard, 4 in deck. Score: 0 Expected: 1
+TEST PASSED: CURSE with 4 in hand, 2 in discard, 4 in deck. Score: -10 Expected: -10
+TEST PASSED: ESTATE with 4 in hand, 2 in discard, 4 in deck. Score: 10 Expected: 10
+TEST PASSED: DUCHY with 4 in hand, 2 in discard, 4 in deck. Score: 30 Expected: 30
+TEST PASSED: PROVINCE with 4 in hand, 2 in discard, 4 in deck. Score: 60 Expected: 60
+TEST PASSED: GREAT_HALL with 4 in hand, 2 in discard, 4 in deck. Score: 10 Expected: 10
+     TEST FAILED: GARDEN with 4 in hand, 2 in discard, 4 in deck. Score: 10 Expected: 1
 TEST PASSED: CURSE with 4 in hand, 3 in discard, 0 in deck. Score: -7 Expected: -7
 TEST PASSED: ESTATE with 4 in hand, 3 in discard, 0 in deck. Score: 7 Expected: 7
 TEST PASSED: DUCHY with 4 in hand, 3 in discard, 0 in deck. Score: 21 Expected: 21
@@ -716,13 +716,13 @@ TEST PASSED: ESTATE with 4 in hand, 3 in discard, 3 in deck. Score: 10 Expected:
 TEST PASSED: DUCHY with 4 in hand, 3 in discard, 3 in deck. Score: 30 Expected: 30
 TEST PASSED: PROVINCE with 4 in hand, 3 in discard, 3 in deck. Score: 60 Expected: 60
 TEST PASSED: GREAT_HALL with 4 in hand, 3 in discard, 3 in deck. Score: 10 Expected: 10
-     TEST FAILED: GARDEN with 4 in hand, 3 in discard, 3 in deck. Score: 0 Expected: 1
-     TEST FAILED: CURSE with 4 in hand, 3 in discard, 4 in deck. Score: -10 Expected: -11
-     TEST FAILED: ESTATE with 4 in hand, 3 in discard, 4 in deck. Score: 10 Expected: 11
-     TEST FAILED: DUCHY with 4 in hand, 3 in discard, 4 in deck. Score: 30 Expected: 33
-     TEST FAILED: PROVINCE with 4 in hand, 3 in discard, 4 in deck. Score: 60 Expected: 66
-     TEST FAILED: GREAT_HALL with 4 in hand, 3 in discard, 4 in deck. Score: 10 Expected: 11
-     TEST FAILED: GARDEN with 4 in hand, 3 in discard, 4 in deck. Score: 0 Expected: 1
+     TEST FAILED: GARDEN with 4 in hand, 3 in discard, 3 in deck. Score: 10 Expected: 1
+TEST PASSED: CURSE with 4 in hand, 3 in discard, 4 in deck. Score: -11 Expected: -11
+TEST PASSED: ESTATE with 4 in hand, 3 in discard, 4 in deck. Score: 11 Expected: 11
+TEST PASSED: DUCHY with 4 in hand, 3 in discard, 4 in deck. Score: 33 Expected: 33
+TEST PASSED: PROVINCE with 4 in hand, 3 in discard, 4 in deck. Score: 66 Expected: 66
+TEST PASSED: GREAT_HALL with 4 in hand, 3 in discard, 4 in deck. Score: 11 Expected: 11
+     TEST FAILED: GARDEN with 4 in hand, 3 in discard, 4 in deck. Score: 11 Expected: 1
 TEST PASSED: CURSE with 4 in hand, 4 in discard, 0 in deck. Score: -8 Expected: -8
 TEST PASSED: ESTATE with 4 in hand, 4 in discard, 0 in deck. Score: 8 Expected: 8
 TEST PASSED: DUCHY with 4 in hand, 4 in discard, 0 in deck. Score: 24 Expected: 24
@@ -735,24 +735,24 @@ TEST PASSED: DUCHY with 4 in hand, 4 in discard, 1 in deck. Score: 27 Expected: 
 TEST PASSED: PROVINCE with 4 in hand, 4 in discard, 1 in deck. Score: 54 Expected: 54
 TEST PASSED: GREAT_HALL with 4 in hand, 4 in discard, 1 in deck. Score: 9 Expected: 9
 TEST PASSED: GARDEN with 4 in hand, 4 in discard, 1 in deck. Score: 0 Expected: 0
-     TEST FAILED: CURSE with 4 in hand, 4 in discard, 2 in deck. Score: -8 Expected: -10
+TEST PASSED: CURSE with 4 in hand, 4 in discard, 2 in deck. Score: -10 Expected: -10
 TEST PASSED: ESTATE with 4 in hand, 4 in discard, 2 in deck. Score: 10 Expected: 10
 TEST PASSED: DUCHY with 4 in hand, 4 in discard, 2 in deck. Score: 30 Expected: 30
 TEST PASSED: PROVINCE with 4 in hand, 4 in discard, 2 in deck. Score: 60 Expected: 60
 TEST PASSED: GREAT_HALL with 4 in hand, 4 in discard, 2 in deck. Score: 10 Expected: 10
-     TEST FAILED: GARDEN with 4 in hand, 4 in discard, 2 in deck. Score: 0 Expected: 1
-     TEST FAILED: CURSE with 4 in hand, 4 in discard, 3 in deck. Score: -10 Expected: -11
+     TEST FAILED: GARDEN with 4 in hand, 4 in discard, 2 in deck. Score: 10 Expected: 1
+TEST PASSED: CURSE with 4 in hand, 4 in discard, 3 in deck. Score: -11 Expected: -11
 TEST PASSED: ESTATE with 4 in hand, 4 in discard, 3 in deck. Score: 11 Expected: 11
 TEST PASSED: DUCHY with 4 in hand, 4 in discard, 3 in deck. Score: 33 Expected: 33
 TEST PASSED: PROVINCE with 4 in hand, 4 in discard, 3 in deck. Score: 66 Expected: 66
 TEST PASSED: GREAT_HALL with 4 in hand, 4 in discard, 3 in deck. Score: 11 Expected: 11
-     TEST FAILED: GARDEN with 4 in hand, 4 in discard, 3 in deck. Score: 0 Expected: 1
+     TEST FAILED: GARDEN with 4 in hand, 4 in discard, 3 in deck. Score: 11 Expected: 1
 TEST PASSED: CURSE with 4 in hand, 4 in discard, 4 in deck. Score: -12 Expected: -12
 TEST PASSED: ESTATE with 4 in hand, 4 in discard, 4 in deck. Score: 12 Expected: 12
 TEST PASSED: DUCHY with 4 in hand, 4 in discard, 4 in deck. Score: 36 Expected: 36
 TEST PASSED: PROVINCE with 4 in hand, 4 in discard, 4 in deck. Score: 72 Expected: 72
 TEST PASSED: GREAT_HALL with 4 in hand, 4 in discard, 4 in deck. Score: 12 Expected: 12
-     TEST FAILED: GARDEN with 4 in hand, 4 in discard, 4 in deck. Score: 0 Expected: 1
+     TEST FAILED: GARDEN with 4 in hand, 4 in discard, 4 in deck. Score: 12 Expected: 1
 
 
 #####################################################
@@ -962,9 +962,9 @@ TEST PASSED: supply[23] = -1, expected -1
 TEST PASSED: supply[24] = -1, expected -1
 TEST PASSED: supply[25] = 10, expected 10
 TEST PASSED: supply[26] = -1, expected -1
-     TEST FAILED: hand count = 7, expected = 4
-     TEST FAILED: deck count = 3, expected = 5
-     TEST FAILED: discard count = 0, expected = 1
+     TEST FAILED: hand count = 8, expected = 4
+     TEST FAILED: deck count = 0, expected = 5
+     TEST FAILED: discard count = 2, expected = 1
 TEST PASSED: buys = 1, expected = 1
 TEST 2: 1 treasure in deck - +1 in hand
 TEST PASSED: supply[0] = 10, expected 10
@@ -994,9 +994,9 @@ TEST PASSED: supply[23] = -1, expected -1
 TEST PASSED: supply[24] = -1, expected -1
 TEST PASSED: supply[25] = 10, expected 10
 TEST PASSED: supply[26] = -1, expected -1
-     TEST FAILED: hand count = 7, expected = 5
-     TEST FAILED: deck count = 3, expected = 4
-     TEST FAILED: discard count = 0, expected = 1
+     TEST FAILED: hand count = 8, expected = 5
+     TEST FAILED: deck count = 0, expected = 4
+     TEST FAILED: discard count = 2, expected = 1
 TEST PASSED: buys = 1, expected = 1
 TEST 3: 2 treasures in deck - +2 in hand
 TEST PASSED: supply[0] = 10, expected 10
@@ -1026,9 +1026,9 @@ TEST PASSED: supply[23] = -1, expected -1
 TEST PASSED: supply[24] = -1, expected -1
 TEST PASSED: supply[25] = 10, expected 10
 TEST PASSED: supply[26] = -1, expected -1
-     TEST FAILED: hand count = 7, expected = 6
-TEST PASSED: deck count = 3, expected = 3
-     TEST FAILED: discard count = 0, expected = 1
+     TEST FAILED: hand count = 8, expected = 6
+     TEST FAILED: deck count = 0, expected = 3
+     TEST FAILED: discard count = 2, expected = 1
 TEST PASSED: buys = 1, expected = 1
 ----------------- Testing Card: council_room ----------------
 
@@ -1244,9 +1244,9 @@ Taken at least once:100.00% of 6
 Calls executed:100.00% of 3
 
 Function 'play_Adventurer'
-Lines executed:64.71% of 17
-Branches executed:66.67% of 12
-Taken at least once:41.67% of 12
+Lines executed:94.12% of 17
+Branches executed:100.00% of 14
+Taken at least once:71.43% of 14
 Calls executed:50.00% of 2
 
 Function 'getCost'
@@ -1268,10 +1268,10 @@ Taken at least once:0.00% of 22
 Calls executed:0.00% of 2
 
 Function 'scoreFor'
-Lines executed:100.00% of 24
-Branches executed:100.00% of 42
-Taken at least once:100.00% of 42
-Calls executed:100.00% of 3
+Lines executed:100.00% of 28
+Branches executed:100.00% of 44
+Taken at least once:100.00% of 44
+Calls executed:100.00% of 1
 
 Function 'isGameOver'
 Lines executed:100.00% of 10
@@ -1352,9 +1352,9 @@ Taken at least once:75.00% of 4
 No calls
 
 File 'dominion.c'
-Lines executed:41.92% of 563
-Branches executed:54.92% of 417
-Taken at least once:39.81% of 417
-Calls executed:32.63% of 95
+Lines executed:43.21% of 567
+Branches executed:56.29% of 421
+Taken at least once:41.09% of 421
+Calls executed:31.18% of 93
 Creating 'dominion.c.gcov'
 

@@ -399,7 +399,7 @@ int isGameOver(struct gameState *state) {
 
   //if three supply pile are at 0, the game ends
   j = 0;
-  for (i = 0; i < 25; i++)
+  for (i = 0; i <= treasure_map; i++)
     {
       if (state->supplyCount[i] == 0)
 	{
@@ -418,6 +418,15 @@ int scoreFor (int player, struct gameState *state) {
 
   int i;
   int score = 0;
+
+    // BUG FIXED FOR ASSIGNMENT 5
+    int deckTotal = 0;
+    for (i = curse; i <= treasure_map; i++){
+        deckTotal += fullDeckCount(player,i,state);
+    }
+    deckTotal /= 10;
+
+
   //score from hand
   for (i = 0; i < state->handCount[player]; i++)
     {
@@ -426,7 +435,9 @@ int scoreFor (int player, struct gameState *state) {
       if (state->hand[player][i] == duchy) { score = score + 3; };
       if (state->hand[player][i] == province) { score = score + 6; };
       if (state->hand[player][i] == great_hall) { score = score + 1; };
-      if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+      //if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+      //if (state->hand[player][i] == gardens) { score = score + ( deckTotal / 10 ); };
+      if (state->hand[player][i] == gardens) { score = score + deckTotal; };
     }
 
   //score from discard
@@ -437,18 +448,22 @@ int scoreFor (int player, struct gameState *state) {
       if (state->discard[player][i] == duchy) { score = score + 3; };
       if (state->discard[player][i] == province) { score = score + 6; };
       if (state->discard[player][i] == great_hall) { score = score + 1; };
-      if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+      //if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+      //if (state->discard[player][i] == gardens) { score = score + ( deckTotal / 10 ); };
+      if (state->discard[player][i] == gardens) { score = score + deckTotal; };
     }
 
   //score from deck
-  for (i = 0; i < state->discardCount[player]; i++)
+  for (i = 0; i < state->deckCount[player]; i++)
     {
       if (state->deck[player][i] == curse) { score = score - 1; };
       if (state->deck[player][i] == estate) { score = score + 1; };
       if (state->deck[player][i] == duchy) { score = score + 3; };
       if (state->deck[player][i] == province) { score = score + 6; };
       if (state->deck[player][i] == great_hall) { score = score + 1; };
-      if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+      //if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+      //if (state->deck[player][i] == gardens) { score = score + ( deckTotal / 10 ); };
+      if (state->deck[player][i] == gardens) { score = score + deckTotal; };
     }
 
   return score;
@@ -659,8 +674,8 @@ void play_Adventurer(struct gameState *state, int currentPlayer){
     drawCard(currentPlayer, state);
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
     if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
-      drawntreasure++;
-      //drawntreasure+= drawntreasure;
+      //drawntreasure++;
+      drawntreasure+= drawntreasure;
     else{
       temphand[z]=cardDrawn;
       state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
@@ -695,7 +710,7 @@ void play_Council_room(struct gameState *state, int currentPlayer, int handPos){
   }
 			
   //put played card in played card pile
-  discardCard(handPos, currentPlayer, state, 1);
+  discardCard(handPos, currentPlayer, state, 0);
 			
 }
 
@@ -766,12 +781,12 @@ int play_Mine(struct gameState *state, int currentPlayer, int handPos, int choic
       return -1;
     }
 		
-    if (choice2 > treasure_map || choice2 < curse)
+    if (choice2 > gold || choice2 < copper)
     {
       return -1;
     }
 
-    if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
+    if ( (getCost(state->hand[currentPlayer][choice1]) + 3) < getCost(choice2) )
     {
       return -1;
     }
@@ -782,7 +797,8 @@ int play_Mine(struct gameState *state, int currentPlayer, int handPos, int choic
     discardCard(handPos, currentPlayer, state, 0);
 
     //discard trashed card
-    for (i = 0; i < state->handCount[currentPlayer]; i++)
+    discardCard(choice1,currentPlayer,state,1);
+/*    for (i = 0; i < state->handCount[currentPlayer]; i++)
     {
       if (state->hand[currentPlayer][i] == j)
       {
@@ -790,6 +806,7 @@ int play_Mine(struct gameState *state, int currentPlayer, int handPos, int choic
         break;
       }
     }
+*/
   return 0;
 }
 
@@ -797,7 +814,7 @@ int play_Mine(struct gameState *state, int currentPlayer, int handPos, int choic
 void play_Smithy(struct gameState *state, int currentPlayer, int handPos){
   int i;
   //+3 Cards
-  for (i = 0; i <= 3; i++)
+  for (i = 0; i < 3; i++)
     {
       drawCard(currentPlayer, state);
     }

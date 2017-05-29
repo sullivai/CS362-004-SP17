@@ -110,6 +110,12 @@ int main(){
         G.discardCount[p] = floor(Random() * MAX_DECK);
         G.handCount[p] = floor(Random() * MAX_HAND);
         G.playedCardCount = floor(Random() * MAX_DECK);
+
+        // Fill supply piles
+        for (i = curse; i <= treasure_map; i++){
+            G.supplyCount[i] = floor(Random() * MAX_DECK);
+        }
+
         // Random cards in hand
         for (i = 0; i < G.handCount[p]; i++){
             G.hand[p][i] = floor(Random() * treasure_map);

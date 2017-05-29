@@ -64,11 +64,15 @@ int main() {
     G.hand[thisPlayer][handpos] = smithy;    
     memcpy(&testG, &G, sizeof(struct gameState));
     cardEffect(smithy, choice1, choice2, choice3, &testG, handpos, &bonus);
+
+/*    
     // supply piles
     for (j = 0; j <= treasure_map; j++){
         sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);
         ASSERT2(testG.supplyCount[j] == G.supplyCount[j], msg);
     }
+*/
+
     // hand count
     sprintf(msg,"hand count = %d, expected = %d", testG.handCount[thisPlayer], G.handCount[thisPlayer] + newCards - discarded);
     ASSERT2(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded, msg);
@@ -81,6 +85,8 @@ int main() {
     // played count
     sprintf(msg,"played count = %d, expected = %d", testG.playedCardCount, G.playedCardCount + discarded);
     ASSERT2(testG.playedCardCount == G.playedCardCount + discarded, msg);
+
+/*
     // card in played pile
     sprintf(msg,"played card = %d, expected = %d", testG.playedCards[testG.playedCardCount-1], smithy);
     ASSERT2(testG.playedCards[testG.playedCardCount-1] == smithy, msg);
@@ -90,6 +96,8 @@ int main() {
     // coins
     sprintf(msg,"coins = %d, expected = %d", testG.coins, G.coins + xtraCoins);
     ASSERT2(testG.coins == G.coins + xtraCoins, msg);
+*/
+/*
 
 	// ----------- TEST 2: loop position of TESTCARD in player's hand --------------
 	printf("\nTEST 2: loop position of %s in player's hand - correct card gets played\n",TESTCARD);
@@ -141,7 +149,7 @@ int main() {
         ASSERT2(testG.discardCount[j] == G.discardCount[j],msg);
     }
 
-
+*/
 	return 0;
 }
 

@@ -55,10 +55,12 @@ int main() {
     memcpy(&testG, &G, sizeof(struct gameState));
     cardEffect(council_room, choice1, choice2, choice3, &testG, handpos, &bonus);
     // supply piles
+/*
     for (j = 0; j <= treasure_map; j++){
         sprintf(msg,"supply[%d] = %d, expected %d",j,testG.supplyCount[j],G.supplyCount[j]);
         ASSERT2(testG.supplyCount[j] == G.supplyCount[j], msg);
     }
+*/
     // hand count
     sprintf(msg,"hand count = %d, expected = %d", testG.handCount[thisPlayer], G.handCount[thisPlayer] + newCards - discarded);
     ASSERT2(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded, msg);
@@ -74,13 +76,14 @@ int main() {
     // card in played pile
     sprintf(msg,"played card = %d, expected = %d", testG.playedCards[testG.playedCardCount-1], council_room);
     ASSERT2(testG.playedCards[testG.playedCardCount-1] == council_room, msg);
+/*
     // buys
     sprintf(msg,"buys = %d, expected = %d", testG.numBuys, G.numBuys + extraBuys);
     ASSERT2(testG.numBuys == G.numBuys + extraBuys, msg);
     // coins
     sprintf(msg,"coins = %d, expected = %d", testG.coins, G.coins + xtraCoins);
     ASSERT2(testG.coins == G.coins + xtraCoins, msg);
-    
+*/    
 	// ----------- TEST 2: loop position of TESTCARD in player's hand --------------
 	printf("\nTEST 2: loop position of %s in player's hand - correct card gets played\n",TESTCARD);
 	// initialize a game state and player cards
@@ -99,7 +102,7 @@ int main() {
         memset(&G,'\0',sizeof(struct gameState));
         initializeGame(numPlayers, k, seed, &G);
     }
-
+/*
 
 	// ----------- TEST 3: check other players hands --------------
 	printf("\nTEST 3: check other players +1 in hand, -1 in deck\n");
@@ -132,7 +135,7 @@ int main() {
     }
 
 
-
+*/
 
 /*
 	// ----------- TEST 4: loop player playing TESTCARD --------------
